@@ -1,0 +1,39 @@
+#atc_left, #atc_right{
+	width:334px;
+	float: left;	
+	height: 305px;
+}
+
+#atc_left, #atc_right{
+	text-align:center;
+}
+
+
+.atc_ttsp{
+	color: #333;
+}	
+
+#atc_price_img{
+	margin: 10px -80px 0 80px;
+	float:left;
+}	
+
+#atc_price{
+	margin: 38px 0 0 0;
+	color: red;
+	font-size:16px;
+}	
+
+#atc_confirm{
+	padding: 0 0 0 0;
+	border: none;
+	width: 165px;
+	height: 59px;
+	background: url(../images/blue-add-to-cart.png);	
+}
+
+#txt_atc_qt{
+	width: 20px;
+	margin: 0 30px 0 0;	
+	text-align: center;
+}

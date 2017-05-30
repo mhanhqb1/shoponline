@@ -1,0 +1,105 @@
+#content_center{
+	width: 670px;
+	float:left;	
+	margin: 6px 0 0 0;
+}
+#content_left, #content_right{
+	width: 177px;
+	float: left;	
+}
+
+#center_bar{
+	color: #82837F;
+	background: url(../images/center_bar.png) no-repeat;
+	line-height: 28px;
+	padding: 0 0 0 50px;
+	font-size:12px;
+}
+
+#center_bar a{
+	color: #82837F;
+}
+
+#center_bar a:hover{
+	color: #09F;
+	text-decoration: underline;
+}
+
+.label_content{
+	text-transform: uppercase;
+	border-left: 3px solid royalBlue;
+	padding-left: 10px;
+	margin: 20px 0 20px 0;
+	font-size: 22px;
+	color: royalBlue;
+	text-align: left;
+}
+
+#btn_comfirm{
+	float: right;	
+}
+
+.btn_edit, .btn_del, .btn_del_all, .btn_del_one, .btn_del_trash, .btn_shipping{
+	border: none;
+	width: 30px;
+	height: 24px;	
+	cursor: pointer;
+}
+
+.btn_edit{
+	background: url(../images/edit.png) no-repeat center;
+}
+
+.btn_del{
+	background: url(../images/del_user.png) no-repeat center;
+	margin: 0 7px 0 7px;
+}
+
+.btn_del_all{
+	background: url(../images/del_all.png) no-repeat center;
+}
+
+
+.btn_del_one{
+	background: url(../images/del.png) no-repeat center;
+}
+
+.btn_del_trash{
+	background: url(../images/delete.png) no-repeat center;
+	height: 30px;
+}
+
+.btn_shipping{
+	background: url(../images/move_waiting_to_participant.png) no-repeat center;
+	height: 40px;
+	margin: 0 0 0 10px;
+}
+
+
+.txt_tecspecs{
+	height: 23px;	
+	width: 200px;
+	font-style:italic;
+}
+
+#tecspecs_des{
+	padding: 5px;	
+	font-family: Arial, Helvetica, sans-serif;
+	font-style:italic;
+	color: #82837f;
+	
+}
+
+.blue_info_details, a.blue_info_details:visited{
+	font-weight: bold;
+	color: #000;	
+}
+
+a.blue_info_details:hover{
+	color: #09f;
+	border-bottom: 1px solid #09f;
+}
+
+.black_info{
+	color: #000;	
+}

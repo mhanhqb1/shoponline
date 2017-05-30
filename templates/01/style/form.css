@@ -1,0 +1,54 @@
+.form{
+	padding: 15px 0 15px 0;
+	background: #FBFBFB;
+	width: 666px;
+}
+.black_color_form .form{
+	color: black;	
+}
+
+.black_color_form a{
+	color: black;
+}
+
+.black_color_form a:hover{
+	color: #09f;	
+	
+}
+
+.black_color_form li{
+	list-style-type: circle;
+	list-style-position: inside;
+}
+
+.form form table{
+	margin: 0 0 0 120px;
+}
+
+.input_text{
+	height: 20px;	
+	width: 180px;
+}
+
+.select_day, .select_month{
+	height: 22px;
+	float:left;
+	margin: 0 3px 0 0;
+}
+
+.input_text_year{
+	float:left;	
+	height: 20px;
+}
+
+.rdo{
+	border: none;	
+}
+
+#btn_reg_username{
+	float:right;
+}
+
+.form label{
+	color: #333;	
+}

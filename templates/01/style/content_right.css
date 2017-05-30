@@ -1,0 +1,40 @@
+.hello_member{
+	text-align:center;
+	width: 146px;
+	color:#0099ff;
+	margin:-7px 0 7px 0;
+	font-weight: bold;
+}
+
+#txt_username, #txt_password{
+	width: 138px;
+	margin: 0 0 8px 0;
+}
+
+#btn_login_out{
+	float:right;
+	margin:8px 8px 0 0;
+}
+
+#adv_img_right_side{
+	margin: -5px 0 0 -7px;	
+}
+
+.user_space{
+	width: 146px;
+	border-bottom: 1px solid #ccc;	
+	margin: 10px 0 3px 0;
+}
+
+.user_space a{
+	color: #82837F;
+}
+
+.user_space a:hover{
+	color: #0099ff;	
+}
+
+#ketqua_login{
+	float: left;
+	color: #F00;
+}

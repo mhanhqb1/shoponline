@@ -1,0 +1,90 @@
+RewriteEngine on 
+
+RewriteRule ^gdsstore.html$ index.php?controller=product&action=list_product
+
+RewriteRule ^san-pham-duoc-ua-thich-nhat.html$ index.php?controller=product&action=rating
+
+RewriteRule ^tin-tuc-moi-nhat.html$ index.php?controller=new_prod&action=list_all
+
+RewriteRule ^thong-tin-khuyen-mai.html$ index.php?controller=sale&action=list_all
+
+RewriteRule ^dang-ky-thong-tin.html$ index.php?controller=user&action=register
+
+RewriteRule ^lien-he.html$ index.php?controller=user&action=contact
+
+RewriteRule ^gio-hang.html$ index.php?controller=user&action=check_out
+
+RewriteRule ^tim-kiem-theo-gia/(.*).html$ index.php?controller=product&action=search&type=default&key=$1
+
+RewriteRule ^tim-kiem-theo-ten/(.*).html$ index.php?controller=product&action=search&type=custom&key=$1
+
+RewriteRule ^tim-kiem-theo-chuc-nang/(.*).html$ index.php?controller=product&action=search&type=techspec&key=$1
+
+RewriteRule ^chi-tiet-san-pham/(.*)/(.*).html$ index.php?controller=product&action=details&mid=$2
+
+RewriteRule ^thong-tin-ca-nhan.html$ index.php?controller=user&action=personal
+
+RewriteRule ^lich-su-giao-dich.html$ index.php?controller=user&action=history
+
+RewriteRule ^doi-mat-khau.html$ index.php?controller=user&action=password
+
+RewriteRule ^khao-sat.html$ index.php?controller=research&action=send
+
+RewriteRule ^quen-mat-khau.html$ index.php?controller=user&action=forgot_password
+
+RewriteRule ^dang-xuat.html$ index.php?controller=user&action=log_out
+
+RewriteRule ^dang-nhap.html$ index.php?controller=user&action=check_login
+
+RewriteRule ^them-san-pham-vao-gio/(.*)/(.*).html$ index.php?controller=cart&action=addtocart&mid=$2
+
+RewriteRule ^xoa-so-sanh-san-pham/(.*).html$ index.php?controller=product&action=delcompare&no=$1
+
+RewriteRule ^xoa-nhan-xet/(.*)$ index.php?controller=master&action=comment&function=del&id=$1
+
+RewriteRule ^nhan-xet/(.*).html$ index.php?controller=comment&action=send&mid=$1
+
+RewriteRule ^so-sanh-san-pham/(.*).html$ index.php?controller=product&action=compare&mid=$1
+
+RewriteRule ^xoa-san-pham/(.*).html$ index.php?controller=cart&action=del&mid=$1
+
+RewriteRule ^luu-thay-doi-so-luong-san-pham-trong-gio.html$ index.php?controller=cart&action=save
+
+RewriteRule ^dat-mua-san-pham.html$ index.php?controller=user&action=info_checkout
+
+RewriteRule ^gui-y-kien-den-gdsstore.html$ index.php?controller=user&action=contact_send
+
+RewriteRule ^lay-lai-mat-khau.html$ index.php?controller=user&action=get_new_password
+
+RewriteRule ^mua-san-pham.html$ index.php?controller=cart&action=order
+
+RewriteRule ^ket-qua-doi-mat-khau.html$ index.php?controller=user&action=change_password
+
+RewriteRule ^cap-nhat-thong-tin-ca-nhan.html$ index.php?controller=user&action=update_personal
+
+RewriteRule ^gui-thong-tin-dang-ky-tai-khoan.html$ index.php?controller=user&action=check_register
+
+RewriteRule ^gui-y-kien-chuong-trinh-khuyen-mai.html$ index.php?controller=send_comment_sale&action=send_comment_sale
+
+RewriteRule ^thong-tin-khuyen-mai/(.*)/(.*).html$ index.php?controller=sale&action=list&id=$2
+
+RewriteRule ^gui-y-kien-tin-tuc.html$ index.php?controller=send_comment_prod&action=send_comment_prod
+
+RewriteRule ^tin-tuc-moi-nhat/(.*)/(.*).html$ index.php?controller=new_prod&action=list&id=$2
+
+RewriteRule ^chap-nhan-them-san-pham-vao-gio/(.*).html$ index.php?controller=cart&action=update_cart&mid=$1
+#RewriteRule ^$ index.php?
+
+
+
+
+
+
+
+
+
+
+
+
+
+
