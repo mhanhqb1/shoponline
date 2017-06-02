@@ -27,7 +27,7 @@ use Cake\Routing\Router;
  *
  * @link http://book.cakephp.org/3.0/en/controllers.html#the-app-controller
  */
-class AdminController extends Controller
+class AppController extends Controller
 {
 
     /** @var object $controller Controller name. */
