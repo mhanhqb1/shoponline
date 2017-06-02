@@ -6,10 +6,15 @@
 
 namespace App\Controller\Admin;
 
-class ProductsController extends AppController {
+use App\Controller\AdminController;
+
+class ProductsController extends AdminController {
     
     public function index() {
-        echo 123; die();
+        echo 123;
     }
     
+    public function add() {
+        echo 123456; die();
+    }
 }

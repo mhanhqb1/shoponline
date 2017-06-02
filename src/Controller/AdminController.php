@@ -27,7 +27,7 @@ use Cake\Routing\Router;
  *
  * @link http://book.cakephp.org/3.0/en/controllers.html#the-app-controller
  */
-class AppController extends Controller
+class AdminController extends Controller
 {
 
     /** @var object $controller Controller name. */
@@ -123,12 +123,6 @@ class AppController extends Controller
      * Common function set layout for view.
      */
     public function setLayout() {
-        if ($this->controller == 'home') {
-            $this->viewBuilder()->layout('home');
-        } else if ($this->controller == 'ajax') {
-            $this->viewBuilder()->layout('ajax');
-        } else {
-            $this->viewBuilder()->layout('default');
-        }
+        $this->viewBuilder()->layout('admin');
     }
 }

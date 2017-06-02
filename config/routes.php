@@ -58,11 +58,11 @@ Router::scope('/', function (RouteBuilder $routes) {
     
     
 
-    Router::prefix('/admin', function($routes) {
+    Router::prefix('admin', function($routes) {
 
         $routes->connect(
             '/',
-            ['controller' => 'ProductsController', 'action' => 'index']
+            ['controller' => 'Products', 'action' => 'index']
         );
         $routes->connect(
             '/:controller',
