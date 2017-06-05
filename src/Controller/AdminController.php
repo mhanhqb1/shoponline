@@ -55,6 +55,16 @@ class AdminController extends Controller
 
         $this->loadComponent('RequestHandler');
         $this->loadComponent('Flash');
+        $this->loadComponent('Auth', array(
+            'loginRedirect' => false,
+            'logoutRedirect' => false,
+            'loginAction' => array(
+                'controller' => 'login',
+                'action' => 'index',
+                'plugin' => null
+            ),
+            'sessionKey' => 'Auth.TrangShop'
+        ));
 
         /*
          * Enable the following components for recommended CakePHP security settings.
@@ -75,6 +85,13 @@ class AdminController extends Controller
         $this->action = strtolower($this->request->params['action']);
         $this->current_url = Router::url($this->request->here, true);
         $this->BASE_URL = Router::fullBaseUrl();
+        
+        // Redirect Auth
+        if ($this->isAuthorized()) {
+            if ($this->controller == 'login' && $this->action == 'index') {
+                return $this->redirect('/');
+            }
+        }
     }
 
     /**
@@ -89,6 +106,11 @@ class AdminController extends Controller
             in_array($this->response->type(), ['application/json', 'application/xml'])
         ) {
             $this->set('_serialize', true);
+        }
+        
+        // Auth
+        if (isset($this->Auth) && $this->isAuthorized()) {
+            $this->set('AppUI', $this->Auth->user());
         }
         
         // Set common param
@@ -124,5 +146,26 @@ class AdminController extends Controller
      */
     public function setLayout() {
         $this->viewBuilder()->layout('admin');
+    }
+    
+    /**
+     * Common function check user is Authorized..
+     * 
+     * 
+     * @param object $user Session user logged.
+     * @return boolean  If true is authorize, and false is unauthorize.
+     */
+    public function isAuthorized($user = null) {
+        if (!isset($this->Auth)) {
+            return false;
+        }
+        if (empty($user)) {
+            $user = $this->Auth->user();
+        }
+        if (!empty($user)) {
+            $this->AppUI = $user;
+            return true;
+        }
+        return false;
     }
 }
