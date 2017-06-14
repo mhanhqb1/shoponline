@@ -118,6 +118,7 @@ class AdminController extends Controller
         $this->set('action', $this->action);
         $this->set('current_url', $this->current_url);
         $this->set('BASE_URL', $this->BASE_URL);
+        $this->set('pageTitle', 'Admin-ELEHT');
         
         // Set default layout
         $this->setLayout();
@@ -145,7 +146,13 @@ class AdminController extends Controller
      * Common function set layout for view.
      */
     public function setLayout() {
-        $this->viewBuilder()->layout('admin');
+        if ($this->controller == 'ajax') {
+            $this->viewBuilder()->layout('ajax');
+        } else if ($this->controller == 'login') {
+            $this->viewBuilder()->layout('admin_login');
+        } else {
+            $this->viewBuilder()->layout('admin');
+        }
     }
     
     /**

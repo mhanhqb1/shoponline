@@ -11,11 +11,13 @@ use App\Controller\AdminController;
 class LoginController extends AdminController {
     
     public function index() {
-        $user = array(
-            'id' => 1
-        );
-        $this->Auth->setUser($user);
-        return $this->redirect($this->Auth->redirectUrl());
+        if ($this->request->is('post')) {
+            $param = $this->request->data;
+            echo '<pre>';
+            print_r($param);
+            die();
+        }
+        
     }
     
     public function logout() {
