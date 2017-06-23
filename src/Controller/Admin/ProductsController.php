@@ -11,10 +11,14 @@ use App\Controller\AdminController;
 class ProductsController extends AdminController {
     
     public function index() {
-        echo 123;
+        include('Bus/Products/index.php');
     }
     
     public function add() {
-        echo 123456; die();
+        include('Bus/Products/add.php');
+    }
+    
+    public function edit($id) {
+        include('Bus/Products/edit.php');
     }
 }

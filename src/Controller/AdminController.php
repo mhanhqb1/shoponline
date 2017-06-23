@@ -122,6 +122,15 @@ class AdminController extends Controller
         
         // Set default layout
         $this->setLayout();
+        
+        // Check to use common view
+        $templatePath = $this->viewBuilder()->templatePath();
+        $viewName = $this->action . '.ctp';
+        $viewPath = APP . 'Template' . DS . $templatePath . DS . $viewName;
+        $commonViewPath = APP . 'Template' . DS . 'Admin' . DS . 'Common' . DS . $viewName;
+        if (!file_exists($viewPath) && file_exists($commonViewPath)) {
+            $this->viewBuilder()->templatePath('Admin\Common');
+        }
     }
     
     /**

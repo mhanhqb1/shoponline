@@ -13,9 +13,11 @@ class LoginController extends AdminController {
     public function index() {
         if ($this->request->is('post')) {
             $param = $this->request->data;
-            echo '<pre>';
-            print_r($param);
-            die();
+            $user = array(
+                'id' => 1
+            );
+            $this->Auth->setUser($user);
+            return $this->redirect('/admin');
         }
         
     }
