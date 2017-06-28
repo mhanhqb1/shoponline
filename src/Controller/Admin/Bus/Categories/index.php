@@ -1,18 +1,12 @@
 <?php
-$modelName = 'Products';
-$this->_pageTitle = 'Danh sách sản phẩm';
+$modelName = 'Categories';
+$this->_pageTitle = 'Danh sách danh mục sản phẩm';
 $displayFields = array(
     'id' => array(
         'title' => 'ID'
     ),
-    'title' => array(
+    'name' => array(
         'title' => 'Tên'
-    ),
-    'category' => array(
-        'title' => 'Danh mục'
-    ),
-    'detail' => array(
-        'title' => 'Chi tiết'
     ),
 //    'discount' => array(
 //        'title' => 'Giam gia'

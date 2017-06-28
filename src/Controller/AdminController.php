@@ -39,6 +39,7 @@ class AdminController extends Controller
     public $AppUI = null;
     public $current_url = '';
     public $BASE_URL = '';
+    public $_pageTitle = 'Admin-ELEHT';
     
     /**
      * Initialization hook method.
@@ -118,7 +119,7 @@ class AdminController extends Controller
         $this->set('action', $this->action);
         $this->set('current_url', $this->current_url);
         $this->set('BASE_URL', $this->BASE_URL);
-        $this->set('pageTitle', 'Admin-ELEHT');
+        $this->set('pageTitle', $this->_pageTitle);
         
         // Set default layout
         $this->setLayout();

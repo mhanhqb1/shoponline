@@ -16,7 +16,7 @@
             <?php endif; ?>
             <!-- /.col-lg-12 -->
             <div class="col-lg-7" style="padding-bottom:120px">
-                <form action="index.php?controller=<?php echo $controller;?>&action=add" method="POST" enctype="multipart/form-data">
+                <form action="<?php echo $BASE_URL.'/admin/'.$controller.'/'.$action;?>" method="POST" enctype="multipart/form-data">
                     <?php foreach ($displayFields as $field => $val): ?>
                         <?php if (!empty($val['image'])): ?>
                             <div class="form-group">

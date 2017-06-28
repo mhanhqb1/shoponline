@@ -29,10 +29,21 @@
                     <a href="#"><i class="fa fa-users fa-fw"></i> Quản lý sản phẩm<span class="fa arrow"></span></a>
                     <ul class="nav nav-second-level">
                         <li>
-                            <a href="index.php?controller=products&action=list">Danh sách sản phẩm</a>
+                            <a href="<?php echo $BASE_URL;?>/admin/products">Danh sách sản phẩm</a>
                         </li>
                         <li>
-                            <a href="index.php?controller=products&action=add">Thêm sản phẩm</a>
+                            <a href="<?php echo $BASE_URL;?>/admin/products/add">Thêm sản phẩm</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#"><i class="glyphicon glyphicon-book"></i> Quản lý danh mục<span class="fa arrow"></span></a>
+                    <ul class="nav nav-second-level">
+                        <li>
+                            <a href="<?php echo $BASE_URL;?>/admin/categories">Danh sách danh mục</a>
+                        </li>
+                        <li>
+                            <a href="<?php echo $BASE_URL;?>/admin/categories/add">Thêm danh mục</a>
                         </li>
                     </ul>
                 </li>
