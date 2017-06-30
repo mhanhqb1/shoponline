@@ -23,7 +23,7 @@
                 <li class="sidebar-search">
                 </li>
                 <li>
-                    <a href="index.php"><i class="fa fa-dashboard fa-fw"></i> Trang chủ</a>
+                    <a href="<?php echo $BASE_URL;?>/admin"><i class="fa fa-dashboard fa-fw"></i> Trang chủ</a>
                 </li>
                 <li>
                     <a href="#"><i class="fa fa-users fa-fw"></i> Quản lý sản phẩm<span class="fa arrow"></span></a>

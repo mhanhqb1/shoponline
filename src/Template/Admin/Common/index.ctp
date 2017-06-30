@@ -11,8 +11,8 @@
                     <?php foreach ($displayFields as $val): ?>
                         <th><?php echo $val['title']; ?></th>
                     <?php endforeach; ?>
-                    <th></th>
-                    <th></th>
+                        <th style="width: 50px"></th>
+                        <th style="width: 50px"></th>
                 </tr>
             </thead>
             <tbody>
@@ -20,16 +20,20 @@
                     <?php foreach ($data as $v): ?>
                         <tr class="odd gradeX" align="center">
                             <?php foreach ($displayFields as $field => $val): ?>
+                            <td <?php echo !empty($val['width']) ? "style='width:{$val['width']}px'" : "";?>>
                                 <?php if (!empty($val['image'])): ?>
-                                    <td><img src="../media/images/<?php echo $v[$field]; ?>" width="100"/></td>
+                                    <img src="../media/images/<?php echo $v[$field]; ?>" width="100"/>
                                 <?php elseif (!empty($val['textarea'])): ?>
-                                    <td><?php echo html_entity_decode($v[$field]); ?></td>
+                                    <?php echo html_entity_decode($v[$field]); ?>
+                                <?php elseif (!empty($val['options']) && key_exists($v[$field], $val['options'])): ?>
+                                    <?php echo $val['options'][$v[$field]]; ?>
                                 <?php else: ?>
-                                    <td><?php echo $v[$field]; ?></td>
+                                    <?php echo $v[$field]; ?>
                                 <?php endif; ?>
+                            </td>            
                             <?php endforeach; ?>
-                            <td class="center"><i class="fa fa-trash-o  fa-fw"></i><a onclick="return confirm('Bạn có muốn xóa nội dung này?')" href="index.php?controller=<?php echo $controller; ?>&action=del&id=<?php echo $v['id']; ?>">Xóa</a></td>
-                            <td class="center"><i class="fa fa-pencil fa-fw"></i> <a href="index.php?controller=<?php echo $controller; ?>&action=edit&id=<?php echo $v['id']; ?>">Sửa</a></td>
+                            <td class="center"><i class="fa fa-trash-o  fa-fw"></i><a onclick="return confirm('Bạn có muốn xóa nội dung này?')" href="<?php echo $BASE_URL . '/admin/' . $controller . '/delete/'.$v['id']; ?>">Xóa</a></td>
+                            <td class="center"><i class="fa fa-pencil fa-fw"></i> <a href="<?php echo $BASE_URL . '/admin/' . $controller . '/edit/'.$v['id']; ?>">Sửa</a></td>
                         </tr>
                     <?php endforeach; ?>
                 <?php endif; ?>

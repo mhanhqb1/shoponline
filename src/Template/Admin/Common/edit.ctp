@@ -16,7 +16,7 @@
         <?php endif;?>
         <!-- /.col-lg-12 -->
         <div class="col-lg-7" style="padding-bottom:120px">
-            <form action="index.php?controller=<?php echo $controller;?>&action=edit&id=<?php echo $data['id'];?>" method="POST" enctype="multipart/form-data">
+            <form action="<?php echo $BASE_URL . '/admin/' . $controller . '/' . $action; ?>/<?php echo $data['id'];?>" method="POST" enctype="multipart/form-data">
                 <?php foreach ($displayFields as $field => $val): ?>
                     <?php if (!empty($val['image'])): ?>
                         <div class="form-group">
@@ -39,6 +39,17 @@
                                 <input type='radio' value='<?php echo $ko;?>' name='<?php echo $field;?>' <?php echo $data[$field] == $ko ? 'checked' : '';?>/><?php echo $vo;?>
                                 <?php endforeach; ?>
                             </div>
+                    <?php elseif (!empty($val['options'])): ?>
+                        <div class="form-group">
+                            <select class="form-control" id="<?php echo $controller . '_' . $field; ?>" name="<?php echo $field; ?>">
+                                <?php if (isset($val['empty'])): ?>
+                                    <option value=""><?php echo $val['empty']; ?></option>
+                                <?php endif; ?>
+                                <?php foreach ($val['options'] as $ks => $vs): ?>
+                                    <option value="<?php echo $ks; ?>" <?php echo $data[$field] == $ks ? 'selected' : '';?>><?php echo $vs; ?></option>
+                                <?php endforeach; ?>
+                            </select>
+                        </div>
                     <?php else: ?>
                         <div class="form-group">
                             <label><?php echo $val['title'];?>:</label>

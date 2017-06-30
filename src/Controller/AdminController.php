@@ -56,6 +56,10 @@ class AdminController extends Controller
 
         $this->loadComponent('RequestHandler');
         $this->loadComponent('Flash');
+        $this->loadComponent('Common');
+        $this->loadComponent('SimpleForm');
+        $this->loadComponent('UpdateForm');
+        $this->loadComponent('SimpleTable');
         $this->loadComponent('Auth', array(
             'loginRedirect' => false,
             'logoutRedirect' => false,
@@ -184,5 +188,20 @@ class AdminController extends Controller
             return true;
         }
         return false;
+    }
+    
+    /**
+     * Common function delete.
+     * 
+     * @param $id.
+     * @return boolean.
+     */
+    public function delete($id) {
+        $modelName = ucfirst($this->controller);
+        $data = $this->$modelName->get($id);
+        if (!empty($data)) {
+            $this->$modelName->delete($data);
+        }
+        return $this->redirect(['action' => 'index']);
     }
 }
