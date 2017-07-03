@@ -57,7 +57,9 @@ class AdminController extends Controller
         $this->loadComponent('RequestHandler');
         $this->loadComponent('Flash');
         $this->loadComponent('Common');
+        $this->loadComponent('Breadcrumb');
         $this->loadComponent('SimpleForm');
+        $this->loadComponent('SearchForm');
         $this->loadComponent('UpdateForm');
         $this->loadComponent('SimpleTable');
         $this->loadComponent('Auth', array(
@@ -113,6 +115,23 @@ class AdminController extends Controller
             $this->set('_serialize', true);
         }
         
+        // Breadcrumb
+        if (!empty($this->Breadcrumb->get())) {
+            $this->set('breadcrumbTitle', $this->Breadcrumb->getTitle());
+            $this->set('breadcrumb', $this->Breadcrumb->get());
+        }
+        
+        // Form / Table
+        if (!empty($this->SearchForm->get())) {
+            $this->set('searchForm', $this->SearchForm->get());
+        }
+        if (!empty($this->UpdateForm->get())) {
+            $this->set('updateForm', $this->UpdateForm->get());
+        }
+        if (!empty($this->SimpleTable->get())) {
+            $this->set('table', $this->SimpleTable->get());
+        }
+        
         // Auth
         if (isset($this->Auth) && $this->isAuthorized()) {
             $this->set('AppUI', $this->Auth->user());
@@ -123,6 +142,7 @@ class AdminController extends Controller
         $this->set('action', $this->action);
         $this->set('current_url', $this->current_url);
         $this->set('BASE_URL', $this->BASE_URL);
+        $this->set('url', $this->request->url);
         $this->set('pageTitle', $this->_pageTitle);
         
         // Set default layout
@@ -165,7 +185,7 @@ class AdminController extends Controller
         } else if ($this->controller == 'login') {
             $this->viewBuilder()->layout('admin_login');
         } else {
-            $this->viewBuilder()->layout('admin');
+            $this->viewBuilder()->layout('admin_lte');
         }
     }
     

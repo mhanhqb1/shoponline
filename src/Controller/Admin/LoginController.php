@@ -14,7 +14,8 @@ class LoginController extends AdminController {
         if ($this->request->is('post')) {
             $param = $this->request->data;
             $user = array(
-                'id' => 1
+                'display_name' => 'Admin',
+                'created' => time()
             );
             $this->Auth->setUser($user);
             return $this->redirect('/admin');

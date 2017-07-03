@@ -220,3 +220,7 @@ Type::build('timestamp')
 if (Configure::read('debug')) {
     Plugin::load('DebugKit', ['bootstrap' => true]);
 }
+
+define('DEFAULT_SITE_TITLE', 'Smarttablet');
+define('VERSION_DATE', date('Ymd'));
+define('USE_SUB_DIRECTORY', '');
