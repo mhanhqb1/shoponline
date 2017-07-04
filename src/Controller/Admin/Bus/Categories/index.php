@@ -1,8 +1,10 @@
 <?php
+use Cake\Core\Configure;
+
 $modelName = 'Categories';
 
 // Create breadcrumb
-$pageTitle = 'Danh sách danh mục sản phẩm';
+$pageTitle = __('LABEL_CATEGORY_LIST');
 $this->_pageTitle = $pageTitle;
 $this->Breadcrumb->setTitle($pageTitle)
     ->add(array(
@@ -13,26 +15,13 @@ $this->Breadcrumb->setTitle($pageTitle)
 $this->SearchForm
     ->setAttribute('type', 'get')
     ->addElement(array(
-        'id' => 'login',
-        'label' => __('LABEL_ADMIN_LOGIN_ID')
-    ))
-    ->addElement(array(
         'id' => 'name',
         'label' => __('LABEL_NAME')
     ))
     ->addElement(array(
-        'id' => 'sort',
-        'label' => __('LABEL_SORT'),
-        'options' => array(
-            'created-asc' => __('LABEL_CREATED_ASC'),
-            'created-desc' => __('LABEL_CREATED_DESC'),
-            'updated-asc' => __('LABEL_UPDATED_ASC'),
-            'updated-desc' => __('LABEL_UPDATED_DESC'),
-        )
-    ))
-    ->addElement(array(
         'id' => 'limit',
-        'label' => __('LABEL_LIMIT')
+        'label' => __('LABEL_LIMIT'),
+        'options' => Configure::read('Config.PageLimit')
     ))
     ->addElement(array(
         'type' => 'submit',
@@ -41,6 +30,7 @@ $this->SearchForm
     ));
 
 $data = $this->$modelName->find('all');
+$categoriesData = $this->Common->arrayKeyValue($data, 'id', 'name');
 $this->set('total', 10);
 $this->set('limit', 10);
 
@@ -60,19 +50,35 @@ $this->SimpleTable->addColumn(array(
         'href'  => $this->BASE_URL . '/' . $this->controller . '/edit/{id}',
         'width' => 80,
     ))
+    ->addColumn(array(
+        'id' => 'name',
+        'title' => __('LABEL_NAME'),
+    ))
+    ->addColumn(array(
+        'id' => 'root_id',
+        'title' => __('LABEL_PARENT_CATEGORY'),
+        'rules' => $categoriesData,
+        'empty' => ''
+    ))   
+    ->addColumn(array(
+        'id' => 'edit',
+        'title' => __('LABEL_EDIT'),
+        'type' => 'link',
+        'value' => '{id}',
+        'href'  => $this->BASE_URL . '/' . $this->controller . '/edit/{id}',
+        'width' => 80,
+    ))
+    ->addColumn(array(
+        'id' => 'delete',
+        'title' => __('LABEL_DELETE'),
+        'type' => 'link',
+        'value' => '{id}',
+        'href'  => $this->BASE_URL . '/' . $this->controller . '/edit/{id}',
+        'width' => 80,
+    ))
     ->setDataset($data)
     ->addButton(array(
         'type' => 'submit',
         'value' => __('LABEL_ADD_NEW'),
         'class' => 'btn btn-success btn-addnew',
-    ))
-    ->addButton(array(
-        'type' => 'submit',
-        'value' => __('LABEL_DISABLE'),
-        'class' => 'btn btn-danger btn-disable',
-    ))
-    ->addButton(array(
-        'type' => 'submit',
-        'value' => __('LABEL_ENABLE'),
-        'class' => 'btn btn-primary btn-enable',
     ));

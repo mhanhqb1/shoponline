@@ -14,7 +14,7 @@
         <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.5.0/css/font-awesome.min.css" type="text/css" />
         <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css" type="text/css" />
         <link rel="stylesheet" href="<?php echo $BASE_URL ?>/AdminLTE/dist/css/AdminLTE.min.css"/>
-        <link rel="stylesheet" href="<?php echo $BASE_URL ?>/AdminLTE/dist/css/skins/skin-black-light.min.css"/>
+        <link rel="stylesheet" href="<?php echo $BASE_URL ?>/AdminLTE/dist/css/skins/_all-skins.min.css"/>
         <link rel="stylesheet" href="<?php echo $BASE_URL ?>/AdminLTE/plugins/pace/pace.min.css"/>
         <link rel="stylesheet" href="<?php echo $BASE_URL ?>/AdminLTE/plugins/datepicker/datepicker3.css"/>
         <link rel="stylesheet" href="<?php echo $BASE_URL ?>/css/style.css?<?php echo VERSION_DATE ?>"/>
@@ -24,7 +24,7 @@
         <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
         <![endif]-->
     </head>
-    <body class="skin-black-light fixed">
+    <body class="hold-transition skin-blue sidebar-mini">
         <div class="wrapper">
             <?php echo $this->element('Admin/header'); ?>
             <?php echo $this->element('Admin/sidebar'); ?>

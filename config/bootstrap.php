@@ -222,5 +222,12 @@ if (Configure::read('debug')) {
 }
 
 define('DEFAULT_SITE_TITLE', 'Smarttablet');
-define('VERSION_DATE', date('Ymd'));
+define('VERSION_DATE', date('Ymdhis'));
 define('USE_SUB_DIRECTORY', '');
+
+Configure::write('Config.PageLimit', array(
+    10 => '10',
+    20 => '20',
+    50 => '50',
+    100 => '100'
+));

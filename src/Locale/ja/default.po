@@ -1,0 +1,1304 @@
+msgid ""
+msgstr ""
+"Plural-Forms: nplurals=1; plural=0;\n"
+"Project-Id-Version: Sample\n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: VCC <kiennh@vccvn.com>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: ja\n"
+"X-Generator: Poedit 1.8.6\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+
+msgid "MESSAGE_FORMAT_INVALID"
+msgstr "%sの形式が正しくありません。"
+
+msgid "MESSAGE_INVALID_DATE_FROM_TO"
+msgstr "TO日時はFROM日より後の日時を入力してください"
+
+msgid "LABEL_EXPORT_ORDER"
+msgstr "注文データ出力"
+
+msgid "LABEL_DATE_FROM"
+msgstr "FROM日付"
+
+msgid "LABEL_DATE_TO"
+msgstr "TO日付"
+
+msgid "LABEL_COPYRIGHT"
+msgstr "Copyright2015-2017 Smart Life Co.,Ltd."
+
+msgid "LABEL_PROFILE"
+msgstr "プロフィール"
+
+msgid "LABEL_LOGOUT"
+msgstr "ログアウト"
+
+msgid "LABEL_MEMBER_FROM"
+msgstr "登録日%s"
+
+msgid "LABEL_DASHBOARD"
+msgstr "ダッシュボード"
+
+msgid "LABEL_EXPORT"
+msgstr "データ出力"
+
+msgid "LABEL_MASTER"
+msgstr "マスタ"
+
+msgid "LABEL_SETTING"
+msgstr "設定"
+
+msgid "LABEL_TELEPHONE"
+msgstr "電話"
+
+msgid "LABEL_EMAIL"
+msgstr "Eメール"
+
+msgid "LABEL_ORDERS"
+msgstr "Orders"
+
+msgid "LABEL_ITEMSETS"
+msgstr "アイテムセット"
+
+msgid "LABEL_ITEM"
+msgstr "アイテム"
+
+msgid "LABEL_ITEMSETS_LIST"
+msgstr "アイテムセット一覧"
+
+msgid "LABEL_ITEMS_LIST"
+msgstr "アイテム一覧"
+
+msgid "LABEL_CHARGE_RESPONSES"
+msgstr "Charge_responses"
+
+msgid "Approve"
+msgstr "承認"
+
+msgid "LABEL_HOME"
+msgstr "ホーム"
+
+msgid "LABEL_LOGIN"
+msgstr "ログイン"
+
+msgid "LABEL_LOGIN_ID"
+msgstr "ログインID"
+
+msgid "LABEL_PASSWORD"
+msgstr "パスワード"
+
+msgid "LABEL_REMEMBER_ME"
+msgstr "次回からログイン情報を省略"
+
+msgid "LABEL_PLEASE_CHECK"
+msgstr "ご確認ください"
+
+msgid "LABEL_INFO"
+msgstr "情報"
+
+msgid "All" 
+msgstr "すべて"
+
+msgid "MESSAGE_LOGIN_FAIL"
+msgstr "ログインID又はパスワードが正しくありません。再度入力してください。"
+
+msgid "MESSAGE_REQUIRED_LOGIN_ID"
+msgstr "ログインIDは必須項目です。"
+
+msgid "MESSAGE_REQUIRED_LOGIN_PASSWORD"
+msgstr "パスワードを入力してください。"
+
+msgid "MESSAGE_REQUIRED_LOGIN_PASSWORD_CONFIRM"
+msgstr "パスワード確認を入力してください。"
+
+msgid "MESSAGE_REQUIRED_ADMIN_TYPE"
+msgstr "アドミンタイプは必須項目です。"
+
+msgid "MESSAGE_PASSWORD_CONFIRM_NOT_MATCH"
+msgstr "確認用パスワードは正しくはありません"
+
+msgid "LABEL_UPDATE"
+msgstr "編集"
+
+msgid "LABEL_SEARCH"
+msgstr "検索"
+
+msgid "LABEL_NAME_EMPTY"
+msgstr "名前入力してください"
+
+msgid "LABEL_CHOOSE_ONE"
+msgstr "選択してください"
+
+msgid "LABEL_SORT_NAME_ASC"
+msgstr "名前の昇順"
+
+msgid "LABEL_SORT_NAME_DESC"
+msgstr "名前の降順"
+
+msgid "LABEL_SORT_ID_ASC"
+msgstr "IDの昇順"
+
+msgid "LABEL_SORT_ID_DESC"
+msgstr "IDの降順"
+
+msgid "LABEL_SORT_PRICE_ASC"
+msgstr "価格の昇順"
+
+msgid "LABEL_SORT_PRICE_DESC"
+msgstr "価格の降順"
+
+msgid "LABEL_SORT_STOCK_ASC"
+msgstr "在庫の昇順"
+
+msgid "LABEL_SORT_STOCK_DESC"
+msgstr "在庫の降順"
+
+msgid "LABEL_SORT"
+msgstr "並び順"
+
+msgid "LABEL_LIMIT"
+msgstr "表示数"
+
+msgid "LABEL_PRICE"
+msgstr "価格"
+
+msgid "LABEL_STOCK"
+msgstr "在庫"
+
+msgid "LABEL_CREATED"
+msgstr "作成日"
+
+msgid "LABEL_EXPIRE_DATE"
+msgstr "期限"
+
+msgid "LABEL_UPDATED"
+msgstr "更新日"
+
+msgid "LABEL_EDIT"
+msgstr "編集"
+
+msgid "LABEL_DELETE"
+msgstr "削除"
+
+msgid "LABEL_ID"
+msgstr "ID"
+
+msgid "LABEL_PAGING_SUMARY"
+msgstr "全%s件中、%s～%s件を表示しています"
+
+msgid "MESSAGE_SYSTEM_ERROR"
+msgstr "システムエラー、もう一度操作してください"
+
+msgid "LABEL_CLOSE"
+msgstr "戻る"
+
+msgid "LABEL_INFO"
+msgstr "情報"
+
+msgid "MESSAGE_CANNOT_UPDATE"
+msgstr "更新できません"
+
+msgid "MESSAGE_UPDATE_SUCCESSFULLY"
+msgstr "データ更新を完了しました"
+
+msgid "LABEL_DISABLE"
+msgstr "無効"
+
+msgid "LABEL_ENABLE"
+msgstr "有効"
+
+msgid "LABEL_IMAGE"
+msgstr "画像"
+
+msgid "LABEL_ITEMSETS_UPDATE"
+msgstr "アイテムセット情報編集"
+
+msgid "LABEL_ITEMSETS_DETAIL"
+msgstr "アイテムセット詳細"
+
+msgid "LABEL_ADD_NEW"
+msgstr "新規追加"
+
+msgid "MESSAGE_REQUIRED_NAME"
+msgstr "名前は必須項目です。"
+
+msgid "MESSAGE_REQUIRED_PRICE"
+msgstr "価格は必須項目です。"
+
+msgid "MESSAGE_REQUIRED_STOCK"
+msgstr "在庫は必須項目です。"
+
+msgid "MESSAGE_REQUIRED_NUMERIC_INPUT"
+msgstr "数字で入力してください"
+
+msgid "LABEL_SAVE"
+msgstr "保存"
+
+msgid "LABEL_CANCEL"
+msgstr "キャンセル"
+
+msgid "MESSAGE_SAVE_OK"
+msgstr "データの保存ができました。"
+
+msgid "MESSAGE_SAVE_NG"
+msgstr "データの保存ができませんでした。"
+
+msgid "LABEL_ITEMS_UPDATE"
+msgstr "アイテム情報編集"
+
+msgid "LABEL_ITEMS_DETAIL"
+msgstr "アイテム詳細"
+
+msgid "LABEL_NAME_SUB"
+msgstr "名前 SUB"
+
+msgid "LABEL_NAME_ENG"
+msgstr "名前 ENG"
+
+msgid "MESSAGE_UPLOAD_FILE_SIZE"
+msgstr "%s以下のファイルをアップロードしてください"
+
+msgid "MESSAGE_UPLOAD_FILE_SIZE_2M"
+msgstr "2MB以下のファイルをアップロードしてください"
+
+msgid "MESSAGE_UPLOAD_FILE_TYPE"
+msgstr "画像ファイルのみをアップロードしてください"
+
+msgid "LABEL_NEW_PASSWORD"
+msgstr "新しいパスワード"
+
+msgid "LABEL_CONFIRM_PASSWORD"
+msgstr "パスワード確認"
+
+msgid "LABEL_CHANGE_PASSWORD"
+msgstr "パスワード変更"
+
+msgid "LABEL_PASSWORD"
+msgstr "パスワード"
+
+msgid "LABEL_ADMIN_LIST"
+msgstr "アドミン一覧"
+
+msgid "LABEL_ADMIN_DETAIL"
+msgstr "アドミン詳細"
+
+msgid "LABEL_ADMIN_LOGIN_ID"
+msgstr "ログインID"
+
+msgid "LABEL_ADMIN_TYPE"
+msgstr "アドミンタイプ"
+
+msgid "LABEL_CHANGE"
+msgstr "変更"
+
+msgid "-- Choose one --"
+msgstr "選択してください"
+
+msgid "LABEL_ADMINS_UPDATE"
+msgstr "アドミン編集"
+
+msgid "LABEL_ADMINS_LIST"
+msgstr "アドミン一覧"
+
+msgid "LABEL_USERS_LIST"
+msgstr "ユーザ一覧"
+
+msgid "LABEL_USRES_UPDATE"
+msgstr "ユーザー情報変更"
+
+msgid "LABEL_CREATED_ASC"
+msgstr "作成日の昇順"
+
+msgid "LABEL_CREATED_DESC"
+msgstr "作成日の降順"
+
+msgid "LABEL_UPDATED_ASC"
+msgstr "更新日の昇順"
+
+msgid "LABEL_UPDATED_DESC"
+msgstr "更新日の降順"
+
+msgid "LABEL_USERS_TITLE"
+msgstr "ユーザ管理"
+
+msgid "Change password"
+msgstr "パスワード変更"
+
+msgid "LABEL_USERS_NAME"
+msgstr "ユーザー名"
+
+msgid "LABEL_USERS_NICKNAME"
+msgstr "ニックネーム"
+
+msgid "LABEL_USERS_START_LIVING_DATE"
+msgstr "入居日"
+
+msgid "LABEL_USERS_GRADUATED_DATE"
+msgstr "転出日"
+
+msgid "LABEL_USERS_KABOCHA_BUILDING_NAME"
+msgstr "建物名"
+
+msgid "LABEL_USERS_KABOCHA_BUILDING_NUMBER"
+msgstr "部屋番号"
+
+msgid "LABEL_USERS_KABOCHA_BUILDING_AREA"
+msgstr "エリア"
+
+msgid "LABEL_KABOCHABUILDING_TITLE"
+msgstr "シェアハウスマスタ"
+
+msgid "LABEL_KABOCHABUILDING_UPDATE"
+msgstr "シェアハウスマスタ情報編集"
+
+msgid "LABEL_KABOCHABUILDING_DETAIL"
+msgstr "シェアハウス詳細"
+
+msgid "LABEL_USERS_POST_CODE"
+msgstr "郵便番号"
+
+msgid "LABEL_USERS_TRUE_VALUES"
+msgstr "ラベル"
+
+msgid "LABEL_USERS_IS_RESIDENCE_CHECK"
+msgstr "かぼちゃ入居"
+
+msgid "LABEL_USERS_EMAIL"
+msgstr "メール"
+
+msgid "LABEL_USERS_PHONE" 
+msgstr "電話番号"
+
+msgid "LABEL_USERS_BIRTHDAY" 
+msgstr "生年月日"
+
+msgid "Prefecture" 
+msgstr "都道府県"
+
+msgid "new password" 
+msgstr "新しいパスワード"
+
+msgid "confirm password" 
+msgstr "確認のためもう一度入力"
+
+msgid "Address1" 
+msgstr "住所1"
+
+msgid "Address2" 
+msgstr "住所2"
+
+msgid "LABEL_ADDRESS"
+msgstr "住所"
+
+msgid "LABEL_LATITUDE"
+msgstr "緯度"
+
+msgid "LABEL_LONGITUDE"
+msgstr "経度"
+
+msgid "LABEL_ROOM"
+msgstr "部屋"
+
+msgid "LABEL_KABOCHABUILDING_ROOMS_EMPTY"
+msgstr "部屋を入力してください"
+
+msgid "LABEL_USERS_NAME_EMPTY"
+msgstr "ユーザー名を入力してください"
+
+msgid "LABEL_USERS_NICKNAME_EMPTY"
+msgstr "ニックネームを入力してください"
+
+msgid "LABEL_USERS_START_LIVING_DATE_EMPTY"
+msgstr "入居日を入力してください"
+
+msgid "LABEL_USERS_GRADUATED_DATE_EMPTY"
+msgstr "転出日を入力してください"
+
+msgid "LABEL_USERS_KABOCHA_BUILDING_NAME_EMPTY"
+msgstr "建物名を入力してください"
+
+msgid "LABEL_USERS_KABOCHA_BUILDING_NUMBER_EMPTY"
+msgstr "部屋番号を入力してください"
+
+msgid "LABEL_USERS_POST_CODE_EMPTY"
+msgstr "郵便番号を入力してください"
+
+msgid "LABEL_USERS_TRUE_VALUES_EMPTY"
+msgstr "ラベルを入力してください"
+
+msgid "LABEL_USERS_IS_RESIDENCE_CHECK_EMPTY"
+msgstr "住人確認済みを入力してください"
+
+msgid "LABEL_USERS_IS_RESIDENCE_CHECK_FALSE"
+msgstr "未確認/転出済"
+
+msgid "LABEL_USERS_IS_RESIDENCE_CHECK_TRUE"
+msgstr "入居中"
+
+msgid "LABEL_USERS_EMAIL_EMPTY"
+msgstr "メールを入力してください"
+
+msgid "LABEL_USERS_PHONE_EMPTY" 
+msgstr "電話番号を入力してください"
+
+msgid "LABEL_USERS_BIRTHDAY_EMPTY" 
+msgstr "生年月日を入力してください"
+
+msgid "Prefecture_EMPTY" 
+msgstr "都道府県を入力してください"
+
+msgid "new password_EMPTY" 
+msgstr "新しいパスワードを入力してください"
+
+msgid "confirm password_EMPTY" 
+msgstr "確認のためもう一度入力を入力してください"
+
+msgid "Address1_EMPTY" 
+msgstr "住所1を入力してくださいv"
+
+msgid "Address2_EMPTY" 
+msgstr "住所2を入力してください"
+
+msgid "EMAIL_NOT_MATCH" 
+msgstr "メールアドレスを正しく入力してください"
+
+msgid "LABEL_USERS_DETAIL" 
+msgstr "ユーザ詳細"
+
+msgid "Point"
+msgstr "ポイント"
+
+msgid "LABEL_USERS_EMAIL_CHECK"
+msgstr "メール確認"
+
+msgid "LABEL_USERS_EMAIL_CHECK_TRUE"
+msgstr "確認済"
+
+msgid "LABEL_USERS_EMAIL_CHECK_FALSE"
+msgstr "未確認"
+
+msgid "LABEL_USERS_IS_RESIDENCE_CHECK_EMPTY"
+msgstr "かぼちゃ入居 を選択してください"
+
+msgid "LABEL_USERS_IS_REFECTURES_CHECK_EMPTY"
+msgstr "建物名を選択してください"
+
+msgid "Change password" 
+msgstr "パスワード変更"
+
+msgid "MESSAGE_DUPLICATE_EMAIL" 
+msgstr "このメールアドレスが既に登録されています。"
+
+msgid "MESSAGE_INVALID_KABOCHABUILDING_ID" 
+msgstr "選択されている建物が存在されていません。"
+
+msgid "LABEL_POINT_WORKS_TITLE" 
+msgstr "ポイントワークス管理"
+
+msgid "LABEL_POINT_WORK_TARGET_URL" 
+msgstr "目的のページURL"
+
+msgid "Title" 
+msgstr "タイトル"
+
+msgid "Mission type"
+msgstr "ミッションタイプ"
+
+msgid "access_link"
+msgstr "サイトアクセス"
+
+msgid "answer_survey"
+msgstr "アンケート"
+
+msgid "capture_photo"
+msgstr "写真撮り"
+
+msgid "register_from_other_site"
+msgstr "サイト登録"
+
+msgid "News"
+msgstr "ニュース"
+
+msgid "LABEL_DESCRIPTION" 
+msgstr "概要"
+
+msgid "LABEL_PLACE_INFO" 
+msgstr "場所"
+
+msgid "LABEL_DISPLAY_START_DATE" 
+msgstr "表示開始日"
+
+msgid "LABEL_DISPLAY_END_DATE" 
+msgstr "表示終了日"
+
+msgid "LABEL_ENTRY_START_DATE" 
+msgstr "応募開始日"
+
+msgid "LABEL_ENTRY_END_DATE" 
+msgstr "応募終了日"
+
+msgid "LABEL_PRIORITY_EMPTY" 
+msgstr "優先度を入力してください"
+
+msgid "LABEL_TRACKING_TYPE_EMPTY" 
+msgstr "トラッキングタイプを入力してください"
+
+msgid "LABEL_IS_USING_CAMERA_EMPTY" 
+msgstr "電話番号を入力してください"
+
+msgid "LABEL_IS_AFTER_MISSION_FORCEMOVE_EMPTY" 
+msgstr "電話番号を入力してください"
+
+msgid "LABEL_DISTRIBUTION_LIMIT_EMPTY" 
+msgstr "電話番号を入力してください"
+
+msgid "LABEL_MISSION_TYPE_EMPTY" 
+msgstr "電話番号を入力してください"
+
+msgid "LABEL_POINT_WORK_TITLE_EMPTY" 
+msgstr "電話番号を入力してください"
+
+msgid "Female" 
+msgstr "女性"
+
+msgid "Male" 
+msgstr "男性"
+
+msgid "Segment sex"
+msgstr "性別区分"
+
+msgid "Segment device"
+msgstr "デバイス区分"
+
+msgid "Segment prefecture"
+msgstr "地域区分"
+
+msgid "Segment user generation"
+msgstr "世代区分"
+
+msgid "Distribution limit"
+msgstr "最大配布可能人数"
+
+msgid "Survey token"
+msgstr "アンケート用トークン （サンクスページ用URLで使用します）"
+
+msgid "BeautiesAfterMissionURL"
+msgstr "アンケート後のPRページURL（ある場合のみ）"
+
+msgid "BeautiesAfterMissionForceMove"
+msgstr "アンケート後のPRページへの自動遷移（オフの場合ボタンを表示）"
+
+msgid "LABEL_TRACKING_TYPE"
+msgstr "トラッキングタイプ"
+
+msgid "no track"
+msgstr "承認不要"
+
+msgid "tracking with complete page"
+msgstr "完了ページでトラッキング"
+
+msgid "tracking with tracking code"
+msgstr "トラッキングコードでトラッキング"
+
+msgid "checking by Admin"
+msgstr "管理者承認必要"
+
+msgid "LABEL_PRIORITY"
+msgstr "優先度"
+
+msgid "LABEL_IS_CAMERA"
+msgstr "カメラ利用"
+
+msgid "LABEL_POINT_WORKS_UPDATE"
+msgstr "ポイントワークス更新"
+
+msgid "LABEL_POINT_GETS_TITLE"
+msgstr "ポイント取得イベント管理"
+
+msgid "LABEL_POINT_ITEMS_TITLE"
+msgstr "ポイント販売アイテム管理"
+
+msgid "LABEL_NAME" 
+msgstr "名前"
+
+msgid "LABEL_NAME_ASC" 
+msgstr "名前の昇順"
+
+msgid "LABEL_NAME_DESC" 
+msgstr "名前の降順"
+
+msgid "LABEL_POINT_GETS_UPDATE" 
+msgstr "ポイント取得イベント変更"
+
+msgid "LABEL_START_DATE" 
+msgstr "開始日"
+
+msgid "LABEL_END_DATE" 
+msgstr "終了日"
+
+msgid "LABEL_LIMIT_QUANTITY" 
+msgstr "交換可能数"
+
+msgid "LABEL_POINT_ITEM_UPDATE" 
+msgstr "ポイントアイテム変更"
+
+msgid "LABEL_USERS_ID"
+msgstr "ユーザID"
+
+msgid "LABEL_POINTGET_NAME"
+msgstr "ポイント取得名"
+
+msgid "LABEL_GOT_POINT"
+msgstr "取得"
+
+msgid "LABEL_POINTITEM_NAME"
+msgstr "項目名"
+
+msgid "LABEL_POINTITEMS_STOCK"
+msgstr "在庫"
+
+msgid "LABEL_USED_POINT"
+msgstr "使用"
+
+msgid "LABEL_USERPOINTLOGS_TITLE"
+msgstr "ポイント通帳"
+
+msgid "LABEL_MENU_LOG"
+msgstr "履歴"
+
+msgid "LABEL_USER_POINT_WORK_ACTION_LOG_TITLE"
+msgstr "ポイントワークス行動ログ"
+
+msgid "LABEL_ACTION_TYPE"
+msgstr "行動タイプ"
+
+msgid "LABEL_CHOOSE_ALL"
+msgstr "すべて"
+
+msgid "LABEL_IMPRESSION"
+msgstr "閲覧"
+
+msgid "LABEL_APPLY"
+msgstr "目的ページへ遷移"
+
+msgid "APPLY_COMPLETE"
+msgstr "達成"
+
+msgid "LABEL_CHOOSE_ALL"
+msgstr "すべて"
+
+msgid "LABEL_UPLOAD_IMAGE"
+msgstr "画像の撮影/アップロード"
+
+msgid "LABEL_WORK_NAME"
+msgstr "ポイントワークス名"
+
+msgid "LABEL_POINT_WORK_DISPLAY_START_DATE_EMPTY"
+msgstr "表示開始日てください"
+
+msgid "LABEL_POINT_WORK_DISPLAY_END_DATE_EMPTY"
+msgstr "表示終了日てください"
+
+msgid "LABEL_POINT_WORK_ENTRY_START_DATE_EMPTY"
+msgstr "応募開始日てください"
+
+msgid "LABEL_POINT_WORK_ENTRY_END_DATE_EMPTY"
+msgstr "応募終了日てください"
+
+msgid "LABEL_DESCRIPTION_EMPTY"
+msgstr "概要てください"
+
+msgid "LABEL_POINT_EMPTY"
+msgstr "応募終了日てください"
+
+msgid "LABEL_START_DATE_EMPTY"
+msgstr "開始日てください"
+
+msgid "LABEL_END_DATE_EMPTY"
+msgstr "ポイントてください"
+
+msgid "LABEL_POINT_WORK_TRACKING_TYPE_EMPTY"
+msgstr "トラッキングタイプてください"
+
+msgid "LABEL_POINT_WORK_PRIORITY_EMPTY"
+msgstr "優先度てください"
+
+msgid "LABEL_POINT_WORK_DISTRIBUTION_LIMIT_EMPTY"
+msgstr "最大配布可能人数を入力してください"
+
+msgid "LABEL_ENTRY_START_DATE_GREATERTHAN_DISPLAY_START_DATE"
+msgstr "表示開始日が応募開始日より前に入力してください"
+
+msgid "LABEL_ENTRY_END_DATE_LESSTHAN_DISPLAY_END_DATE"
+msgstr "応募終了日が表示終了日より前に入力してください"
+
+msgid "LABEL_START_DATE_LESSTHAN_END_DATE"
+msgstr "開始日が終了日より前に入力してください"
+
+msgid "LABEL_IS_MULTIPLE_GET"
+msgstr "複数回取得"
+
+msgid "LABEL_DISTRIBUTION_LIMIT_ISNUMBER"
+msgstr "最大配布可能人数は数字で入力してください"
+
+msgid "LABEL_PRIORITY_ISNUMBER"
+msgstr "優先度は数字で入力してください"
+
+msgid "LABEL_YES"
+msgstr "可"
+
+msgid "LABEL_NO"
+msgstr "不可"
+
+msgid "LABEL_PREFECTURE_ID" 
+msgstr "都道府県ID"
+
+msgid "BeautiesMissionThanksURLwithToken"
+msgstr "サンクスページ用URL"
+
+msgid "BeautiesMissionThanksURLwithToken discription text"
+msgstr "SurveyMonkeyのサンクスページに貼ってください。"
+
+msgid "BeautiesAfterMissionURL discription text"
+msgstr "アンケート後に案内したいURLがある場合ここに入力してください。"
+
+msgid "LABEL_POINT_NUMBER"
+msgstr "応答終了日てください"
+
+msgid "LABEL_QUANTITY_LIMIT_NUMBER"
+msgstr "交換可能数は数字で入力してください"
+
+msgid "LABEL_LATITUDE_NUMBER"
+msgstr "緯度は数字で入力してください"
+
+msgid "LABEL_LONGTITUDE_NUMBER"
+msgstr "経度は数字で入力してください"
+
+msgid "LABEL_USER_BOUGH_ITEMS_TITLE"
+msgstr "ユーザのポイント交換一覧"
+
+msgid "LABEL_CUSTOMER_MENBER_BOUGH_ITEM_ID"
+msgstr "顧客の会員ID"
+
+msgid "LABEL_POINT_ITEM_ID"
+msgstr "商品のID"
+
+msgid "LABEL_USER_BOUGH_POINT_ITEM_NAME"
+msgstr "商品名"
+
+msgid "LABEL_STATUS"
+msgstr "ステータス"
+
+msgid "LABEL_TOTAL_POINT"
+msgstr "合計ポイント"
+
+msgid "LABEL_READ_DATE"
+msgstr "読み取り日"
+
+msgid "LABEL_APPROEVE_BOUGHT_ITEM"
+msgstr "交換"
+
+msgid "LABEL_BOUGHT_ITEMS"
+msgstr "未処理"
+
+msgid "LABEL_CANCELED_ITEMS"
+msgstr "キャンセル済み"
+
+msgid "COMPLETE_ITEMS"
+msgstr "交換済み"
+
+msgid "LABEL_SCANNER_QR_ITEMS"
+msgstr "読み取り済み"
+
+msgid "LABEL_NOT_SCANNER_QR_ITEMS"
+msgstr "未読み取り"
+
+msgid "LABEL_PUBLIC_INFORMATION_TITLE"
+msgstr "お知らせマスタ"
+
+msgid "LABEL_DETAIL_INFORMATION_TITLE"
+msgstr "お知らせ詳細"
+
+msgid "LABEL_UPDATE_INFORMATION_TITLE"
+msgstr "お知らせ更新"
+
+msgid "LABEL_INFORMATION_NAME"
+msgstr "タイトル"
+
+msgid "LABEL_INFORMATION_CONTENT"
+msgstr "内容"
+
+msgid "LABEL_PUBLIC_DATE"
+msgstr "公開日"
+
+msgid "LABEL_PUBLIC_INFORMATION_NOT_EMPTY"
+msgstr "公開日を入力してください"
+
+msgid "LABEL_TITLE_INFORMATION_NOT_EMPTY"
+msgstr "タイトルを入力してください"
+
+msgid "LABEL_SKILL_GROUPS_LIST"
+msgstr "スキルグループ一覧"
+
+msgid "LABEL_DETAIL_SKILL_GROUPS"
+msgstr "スキルグループ詳細"
+
+msgid "LABEL_SKILL_GROUPS_UPDATE"
+msgstr "スキルグループ更新"
+
+msgid "LABEL_SKILLS_LIST"
+msgstr "スキル一覧"
+
+msgid "LABEL_DETAIL_SKILLS_TITLE"
+msgstr "スキル詳細"
+
+msgid "LABEL_SKILLS_UPDATE"
+msgstr "スキル更新"
+
+msgid "LABEL_SETTING_PAGE_NOT_EMPTY"
+msgstr "設定ページを入力してください"
+
+msgid "LABEL_MYPAGE_PAGE_NOT_EMPTY"
+msgstr "マイページを入力してください"
+
+msgid "LABEL_SETTING_PAGE_IS_NUMBER"
+msgstr "設定ページは数字で入力してください"
+
+msgid "LABEL_MYPAGE_PAGE_IS_NUMBER"
+msgstr "マイページは数字で入力してください"
+
+msgid "LABEL_SKILL_GROUPS_NAME_NOT_EMPTY"
+msgstr "スキルグループ名を入力してください"
+
+msgid "LABEL_SKILLS_NAME_NOT_EMPTY"
+msgstr "スキル名を入力してください"
+
+msgid "LABEL_SKILL_VALUE_TYPE_NOT_EMPTY"
+msgstr "タイプを入力してください"
+
+msgid "LABEL_SKILL_GROUPS_NAME_NOT_EMPTY"
+msgstr "スキルグループ名を入力してください"
+
+msgid "LABEL_SKILL_GROUPS_NAME"
+msgstr "スキルグループ名"
+
+msgid "LABEL_SKILL_GROUPS_SETTING_PAGE"
+msgstr "設定ページ"
+
+msgid "LABEL_SKILL_GROUPS_MYPAGE_PAGE"
+msgstr "マイページ"
+
+msgid "LABEL_SKILLS_GROUP_NAME"
+msgstr "スキルグループ名"
+
+msgid "LABEL_SKILLS_NAME"
+msgstr "スキル名"
+
+msgid "LABEL_SKILLS_VALUE_TYPE"
+msgstr "タイプ"
+
+msgid "LABEL_TYEPE_VALUE_IS_NUMBER"
+msgstr "タイプは数字で入力してください"
+
+msgid "LABEL_SKILL_MASTER"
+msgstr "スキルマスタ"
+
+msgid "LABEL_CONFIG_DEFAULT_ICON"
+msgstr "ユーザアイコン設定マスタ"
+
+msgid "LABEL_CONFIG_DEFAULT_ICONS_NAME"
+msgstr "アイコン名"
+
+msgid "LABEL_CONFIG_DEFAULT_ICONS_NAME_NOT_EMPTY"
+msgstr "アイコン名を入力してください"
+
+msgid "LABEL_CONFIG_DEFAULT_ICONS_PATH"
+msgstr "アイコンパス"
+
+msgid "LABEL_CONFIG_DEFAULT_ICONS_PATH_NOT_EMPTY"
+msgstr "アイコンパスを入力してください"
+
+msgid "LABEL_CONFIG_DEFAULT_ICONS_PRIORITY"
+msgstr "優先度"
+
+msgid "LABEL_CONFIG_DEFAULT_ICONS_TITLE"
+msgstr "デフォールトアイコン一覧"
+
+msgid "LABEL_CONFIG_DEFAULT_ICONS_UPDATE"
+msgstr "デフォールトアイコン更新"
+
+msgid "LABEL_DETAIL_CONFIG_DEFAULT_ICONS"
+msgstr "デフォールトアイコン詳細"
+
+msgid "LABEL_UPLOAD_FILE_SIZE"
+msgstr "%s以下のファイルをアップロードしてください"
+
+msgid "LABEL_UPLOAD_FILE_TYPE"
+msgstr "画像ファイルのみをアップロードしてください"
+
+msgid "LABEL_USER_NOTIFICATIONS_LIST"
+msgstr "お知らせ一覧"
+
+msgid "LABEL_USER_NOTIFICATIONS_DETAIL"
+msgstr "お知らせ詳細"
+
+msgid "LABEL_USER_NOTIFICATIONS_ADD"
+msgstr "お知らせ新規追加"
+
+msgid "LABEL_USER_NOTIFICATIONS_UPDATE"
+msgstr "お知らせ編集"
+
+msgid "LABEL_USER_NOTIFICATIONS_USER_ID"
+msgstr "ユーザID"
+
+msgid "LABEL_USER_NOTIFICATIONS_TITLE"
+msgstr "お知らせタイトル"
+
+msgid "LABEL_USER_NOTIFICATIONS_CONTENT_TYPE"
+msgstr "コンテンツタイプ"
+
+msgid "LABEL_USER_NOTIFICATIONS_DIRECT"
+msgstr "ダイレクトメール"
+
+msgid "LABEL_USER_NOTIFICATIONS_PUBLIC"
+msgstr "全体通知"
+
+msgid "LABEL_USER_NOTIFICATIONS_CONTENT"
+msgstr "内容"
+
+msgid "LABEL_USER_NOTIFICATIONS_TARGET_URL"
+msgstr "ターゲットURL"
+
+msgid "LABEL_USER_NOTIFICATIONS_TARGET_URL_LABEL"
+msgstr "ターゲットURLボタンラベル"
+
+msgid "LABEL_USER_NOTIFICATIONS_IS_IMPORTANT"
+msgstr "重要フラグ"
+
+msgid "LABEL_USER_NOTIFICATIONS_RECIEVED_DATE"
+msgstr "受信日"
+
+msgid "LABEL_USER_NOTIFICATIONS_READ_DATE"
+msgstr "読日"
+
+msgid "LABEL_COUNSELING_STAFFS_LIST"
+msgstr "カウンセラー一覧"
+
+msgid "LABEL_COUNSELING_STAFFS_DETAIL"
+msgstr "カウンセラー詳細"
+
+msgid "LABEL_COUNSELING_STAFFS_UPDATE"
+msgstr "カウンセラー更新"
+
+msgid "LABEL_COUNSELING_STAFFS_NAME"
+msgstr "名前"
+
+msgid "LABEL_COUNSELING_STAFFS_NAME_EMPTY"
+msgstr "名前を入力してください"
+
+msgid "LABEL_COUNSELING_STAFFS_EMAIL"
+msgstr "メールアドレス"
+
+msgid "LABEL_COUNSELING_STAFFS_EMAIL_EMPTY"
+msgstr "メールアドレスを入力してください"
+
+msgid "LABEL_COUNSELING_STAFFS_COMPANY"
+msgstr "会社名"
+
+msgid "LABEL_COUNSELING_STAFFS_AREA_NAME"
+msgstr "地域名"
+
+msgid "LABEL_COUNSELING_STAFFS_IMAGE_PATH"
+msgstr "画像URL"
+
+msgid "LABEL_COUNSELING_STAFFS_DESCRIPTION"
+msgstr "説明文"
+
+msgid "LABEL_COUNSELING_FORM_LOGS_DETAIL"
+msgstr "おしごと相談申し込みログ詳細"
+
+msgid "LABEL_COUNSELING_FORM_LOGS_UPDATE"
+msgstr "おしごと相談申し込みログ修正"
+
+msgid "LABEL_COUNSELING_FORM_LOGS_ADD"
+msgstr "おしごと相談申し込みログ修正"
+
+msgid "LABEL_COUNSELING_FORM_LOGS_LIST"
+msgstr "おしごと相談申し込みログ"
+
+msgid "LABEL_COUNSELING_FORM_LOGS_STAFF_ID"
+msgstr "カウンセラーID"
+
+msgid "LABEL_COUNSELING_FORM_LOGS_STAFF_ID_EMPTY"
+msgstr "カウンセラーIDを入力してください"
+
+msgid "LABEL_COUNSELING_FORM_LOGS_NAME"
+msgstr "名前"
+
+msgid "LABEL_COUNSELING_FORM_LOGS_NAME_EMPTY"
+msgstr "名前を入力してください"
+
+msgid "LABEL_COUNSELING_FORM_LOGS_EMAIL"
+msgstr "メールアドレス"
+
+msgid "LABEL_COUNSELING_FORM_LOGS_EMAIL_EMPTY"
+msgstr "メールアドレスを入力してください"
+
+msgid "LABEL_COUNSELING_FORM_LOGS_TEL"
+msgstr "電話番号"
+
+msgid "LABEL_COUNSELING_FORM_LOGS_TEL_EMPTY"
+msgstr "電話番号を入力してください"
+
+msgid "LABEL_COUNSELING_FORM_LOGS_COUNSELING_TYPE"
+msgstr "相談方法"
+
+msgid "LABEL_COUNSELING_FORM_LOGS_COUNSELING_TYPE_EMPTY"
+msgstr "相談方法を入力してください"
+
+msgid "LABEL_COUNSELING_FORM_LOGS_COUNSELING_CONTENT"
+msgstr "相談内容"
+
+msgid "LABEL_COUNSELING_FORM_LOGS_COUNSELING_CONTENT_EMPTY"
+msgstr "相談内容を入力してください"
+
+msgid "LABEL_COUNSELING_FORM_LOGS_OTHER_CONTENT"
+msgstr "その他内容"
+
+msgid "LABEL_COUNSELING_FORM_LOGS_OTHER_CONTENT_EMPTY"
+msgstr "その他内容を入力してください"
+
+msgid "LABEL_COUNSELING_FORM_LOGS_USER_INFO"
+msgstr "説明文"
+
+msgid "LABEL_RECOMMEND_SITES_LIST"
+msgstr "オススメサイト"
+
+msgid "LABEL_RECOMMEND_SITES_ADD"
+msgstr "オススメサイト"
+
+msgid "LABEL_RECOMMEND_SITES_UPDATE"
+msgstr "オススメサイト"
+
+msgid "LABEL_RECOMMEND_SITES_DETAIL"
+msgstr "オススメサイト"
+
+msgid "LABEL_RECOMMEND_SITES_NAME"
+msgstr "サイト名"
+
+msgid "LABEL_RECOMMEND_SITES_NAME_EMPTY"
+msgstr "サイト名を入力してください"
+
+msgid "LABEL_RECOMMEND_SITES_DESCRIPTION"
+msgstr "説明文"
+
+msgid "LABEL_RECOMMEND_SITES_PRIORITY"
+msgstr "優先度"
+
+msgid "LABEL_RECOMMEND_SITES_URL_EMPTY"
+msgstr "サイトURLを入力してください"
+
+msgid "LABEL_RECOMMEND_SITES_URL"
+msgstr "サイトURL"
+
+msgid "LABEL_USER_NOTIFICATIONS_TARGET_URL_EMPTY"
+msgstr "ターゲットURLを入力してください"
+
+msgid "LABEL_USER_NOTIFICATIONS_TARGET_URL_LABEL_EMPTY"
+msgstr "ターゲットURLボタンラベルを入力してください"
+
+msgid "LABEL_USER_NOTIFICATIONS_TITLE_EMPTY"
+msgstr "お知らせタイトルを入力してください"
+
+msgid "LABEL_USER_NOTIFICATIONS_IS_IMPORTANT_EMPTY"
+msgstr "重要フラグを入力してください"
+
+msgid "LABEL_USER_CSV"
+msgstr "CSVで新規登録"
+
+msgid "LABEL_USER_GROUP"
+msgstr "ユーザー"
+
+msgid "LABEL_USER_EMAIL_DATA_EXITS"
+msgstr "%sが既に登録されています"
+
+msgid "LABEL_USER_NICK_NAME_DATA_EXITS"
+msgstr "%sが既に登録されています"
+
+msgid "LABEL_JOBS_TITLE"
+msgstr "バイト管理"
+
+msgid "LABEL_JOBS_LIST"
+msgstr "バイト一覧"
+
+msgid "LABEL_JOBS_DETAIL"
+msgstr "バイト詳細"
+
+msgid "LABEL_JOBS_UPDATE"
+msgstr "バイト更新"
+
+msgid "LABEL_JOBS_CONFIRM"
+msgstr "バイト確認"
+
+msgid "LABEL_JOBS_NAME"
+msgstr "募集職種名"
+
+msgid "LABEL_JOBS_COMPANY"
+msgstr "会社名"
+
+msgid "LABEL_JOBS_CATEGORY"
+msgstr "職種"
+
+msgid "LABEL_JOBS_CONTENT"
+msgstr "仕事内容"
+
+msgid "LABEL_JOBS_CONTENT_DETAIL"
+msgstr "仕事内容詳細"
+
+msgid "LABEL_JOBS_LOCATION"
+msgstr "勤務地"
+
+msgid "LABEL_JOBS_ADDRESS"
+msgstr "勤務地住所"
+
+msgid "LABEL_JOBS_WORKING_HOLIDAY"
+msgstr "休日"
+
+msgid "LABEL_JOBS_WORKING_TIME"
+msgstr "勤務時間"
+
+msgid "LABEL_JOBS_NEAREST_STATION"
+msgstr "勤務地最寄駅"
+
+msgid "LABEL_JOBS_BUSINESS_CONTENT"
+msgstr "事業内容"
+
+msgid "LABEL_JOBS_EMPLOYMENT_STATUS"
+msgstr "雇用形態"
+
+msgid "LABEL_JOBS_TREATMENT"
+msgstr "待遇・福利厚生"
+
+msgid "LABEL_JOBS_APPLY_METHOD"
+msgstr "応募方法"
+
+msgid "LABEL_JOBS_APPLY_QUATIFICATION"
+msgstr "応募資格"
+
+msgid "LABEL_JOBS_RELATED_URL"
+msgstr "関連URL"
+
+msgid "LABEL_JOBS_DISPLAY_START_DATE"
+msgstr "表示開始日"
+
+msgid "LABEL_JOBS_DISPLAY_END_DATE"
+msgstr "表示終了日"
+
+msgid "LABEL_JOBS_ENTRY_START_DATE"
+msgstr "応募開始日時"
+
+msgid "LABEL_JOBS_ENTRY_END_DATE"
+msgstr "応募終了日時"
+
+msgid "LABEL_JOBS_LOGITUDE"
+msgstr "経度"
+
+msgid "LABEL_JOBS_LATITUDE"
+msgstr "緯度"
+
+msgid "LABEL_JOBS_CONTACT_STAFF"
+msgstr "連絡先担当部署／担当者"
+
+msgid "LABEL_JOBS_CONTACT_POST_CODE"
+msgstr "連絡先郵便番号"
+
+msgid "LABEL_JOBS_CONTACT_ADDRESS"
+msgstr "連絡先住所"
+
+msgid "LABEL_JOBS_CONTACT_TEL"
+msgstr "連絡先電話番号"
+
+msgid "LABEL_JOBS_FREE_CONTENT1_LABEL"
+msgstr "自由項目1"
+
+msgid "LABEL_JOBS_FREE_CONTENT1_CONTENT"
+msgstr "自由項目1内容"
+
+msgid "LABEL_JOBS_IMAGE_PATH"
+msgstr "画像URL"
+
+msgid "LABEL_JOBS_SALARY"
+msgstr "給与"
+
+msgid "LABEL_BTN_CONFIRM"
+msgstr "修正"
+
+msgid "LABEL_JOBS_NAME_EMPTY"
+msgstr "募集職種名入力してください"
+
+msgid "LABEL_JOBS_CATEGORY_EMPTY"
+msgstr "職種入力してください"
+
+msgid "LABEL_COUNSELING_FORM_LOGS_COUNSELING_TYPE_NUMBER"
+msgstr "相談方法は数字で入力してください"
+
+msgid "LABEL_USERS_KABOCHA_BUILDING_BUIL_DATE"
+msgstr "物件日付"
+
+msgid "LABEL_USERS_KABOCHA_BUILDING_SERVICE_START_DATE"
+msgstr "サービス開始日"
+
+msgid "LABEL_USERS_KABOCHA_BUILDING_CODE"
+msgstr "物件コード"
+
+msgid "LABEL_USERS_KABOCHA_BUILDING_CODE_EMPTY"
+msgstr "物件コード入力してください"
+
+msgid "LABEL_USERS_KABOCHA_BUILDING_BRAND_NAME"
+msgstr "ブランド名"
+
+msgid "LABEL_NOTES_PUBLIC_RANGE_1"
+msgstr "全体公開"
+
+msgid "LABEL_NOTES_PUBLIC_RANGE_3"
+msgstr "建物限定"
+
+msgid "LABEL_NOTES_LIST"
+msgstr "ノート一覧"
+
+msgid "LABEL_NOTES_UPDATE"
+msgstr "ノート編集"
+
+msgid "LABEL_NOTES_DETAIL"
+msgstr "ノート詳細"
+
+msgid "LABEL_NOTES_JENRE_ID"
+msgstr "ジャンルID"
+
+msgid "LABEL_NOTES_TITLE"
+msgstr "ノートタイトル"
+
+msgid "LABEL_NOTES_PUBLIC_RANGE"
+msgstr "公開範囲"
+
+msgid "LABEL_NOTES_KABOCHA_BUILDING_ID"
+msgstr "建物ID"
+
+msgid "LABEL_NOTES_AREA_ID"
+msgstr "エリア"
+
+msgid "LABEL_NOTES_LIST_TILE"
+msgstr "住人ノートマスター"
+
+msgid "MESSAGE_PASSWORD_MIN_LENGTH_ERROR"
+msgstr "パスワードは6文字以上で半角英数記号で入力してください"
+
+msgid "LABEL_JOBS_CONTACT_EMAIL"
+msgstr "連絡先メールアドレス"
+
+msgid "LABEL_JOBS_CONTACT_EMAIL_EMPTY"
+msgstr "連絡先メールアドレスを入力してください"
