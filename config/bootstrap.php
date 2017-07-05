@@ -231,3 +231,4 @@ Configure::write('Config.PageLimit', array(
     50 => '50',
     100 => '100'
 ));
+Configure::write('Config.PaginationLimit', 10);

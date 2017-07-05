@@ -10,15 +10,17 @@ use App\Controller\AdminController;
 
 class ProductsController extends AdminController {
     
+    /**
+     * Product list page
+     */
     public function index() {
         include('Bus/Products/index.php');
     }
     
-    public function add() {
-        include('Bus/Products/add.php');
-    }
-    
-    public function edit($id) {
-        include('Bus/Products/edit.php');
+    /**
+     * Product update page
+     */
+    public function update($id = '') {
+        include ('Bus/Products/update.php');
     }
 }

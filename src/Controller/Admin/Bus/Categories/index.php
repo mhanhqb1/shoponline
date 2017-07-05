@@ -29,20 +29,22 @@ $this->SearchForm
         'class' => 'btn btn-primary',
     ));
 
-$data = $this->$modelName->find('all');
+// Load data
+$param = $this->getParams(
+    array(
+        'page' => 1, 
+        'limit' => Configure::read('Config.PaginationLimit')
+    )
+);
+$result = $this->$modelName->getList($param);
+$total = !empty($result['total']) ? $result['total'] : 0;
+$data = !empty($result['data']) ? $result['data'] : array();
 $categoriesData = $this->Common->arrayKeyValue($data, 'id', 'name');
-$this->set('total', 10);
-$this->set('limit', 10);
+$this->set('total', $total);
+$this->set('limit', $param['limit']);
 
 // Show data
 $this->SimpleTable->addColumn(array(
-        'id' => 'item',
-        'name' => 'items[]',
-        'type' => 'checkbox',
-        'value' => '{id}',
-        'width' => 20
-    ))
-    ->addColumn(array(
         'id' => 'id',
         'title' => __('LABEL_ID'),
         'type' => 'link',
@@ -53,12 +55,14 @@ $this->SimpleTable->addColumn(array(
     ->addColumn(array(
         'id' => 'name',
         'title' => __('LABEL_NAME'),
+        'emtpy' => ''
     ))
     ->addColumn(array(
         'id' => 'root_id',
         'title' => __('LABEL_PARENT_CATEGORY'),
         'rules' => $categoriesData,
-        'empty' => ''
+        'empty' => '',
+        'width' => 300
     ))   
     ->addColumn(array(
         'id' => 'edit',

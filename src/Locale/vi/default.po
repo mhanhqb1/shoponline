@@ -16,6 +16,15 @@ msgstr ""
 msgid "LABEL_CATEGORY_LIST"
 msgstr "Danh sách danh mục sản phẩm"
 
+msgid "LABEL_PRODUCT_LIST"
+msgstr "Danh sách sản phẩm"
+
+msgid "LABEL_PRODUCT_MANAGEMENT"
+msgstr "Quản lý sản phẩm"
+
+msgid "LABEL_MASTER"
+msgstr "Quản lý chung"
+
 msgid "LABEL_SEARCH"
 msgstr "Search"
 
@@ -45,3 +54,24 @@ msgstr "Trang chủ"
 
 msgid "LABEL_DASHBOARD"
 msgstr "Dashboard"
+
+msgid "LABEL_ID"
+msgstr "ID"
+
+msgid "LABEL_CATEGORY"
+msgstr "Danh mục"
+
+msgid "LABEL_PRICE"
+msgstr "Giá tiền"
+
+msgid "LABEL_SELECT_ALL"
+msgstr "Tất cả"
+
+msgid "LABEL_SAVE"
+msgstr "Lưu"
+
+msgid "LABEL_CANCEL"
+msgstr "Hủy bỏ"
+
+msgid "LABEL_DETAIL"
+msgstr "Chi tiểt"
