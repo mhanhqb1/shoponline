@@ -17,8 +17,6 @@ if (!empty($id)) {
         AppLog::info("Product unavailable", __METHOD__, $param);
         throw new NotFoundException("Product unavailable", __METHOD__, $param);
     }
-} else {
-    throw new NotFoundException();
 }
 
 $this->_pageTitle = $pageTitle;
@@ -76,6 +74,10 @@ $this->UpdateForm->reset()
             'required' => true,
         ))
         ->addElement(array(
+            'id' => 'price',
+            'label' => __('LABEL_PRICE'),
+        ))
+        ->addElement(array(
             'type' => 'submit',
             'value' => __('LABEL_SAVE'),
             'class' => 'btn btn-primary',
@@ -85,7 +87,11 @@ $this->UpdateForm->reset()
 if ($this->request->is('post')) {
     // Trim data
     $values = $this->request->getData();
-
+    
+    if (empty($data)) {
+        $data = $this->$modelName->newEntity();
+    }
+    
     // Validation
     if ($form->validate($values)) {
         if (!empty($_FILES['image_path'])) {
