@@ -5,31 +5,19 @@ namespace App\Model\Table;
 use Cake\ORM\Table;
 use Cake\Validation\Validator;
 
-class ProductsTable extends Table
+class ProductsTable extends AbstractTable
 {
-    public $_displayField = array(
-        'id' => array(
-            'title' => 'ID'
-        ),
-        'title' => array(
-            'title' => 'Tieu de'
-        ),
-        'detail' => array(
-            'title' => 'Chi tiet'
-        ),
-        'category' => array(
-            'title' => 'Danh muc'
-        ),
-        'discount' => array(
-            'title' => 'Giam gia'
-        )
-    );
-    
+    /**
+     * Initialize
+     */
     public function initialize(array $config)
     {
         $this->addBehavior('Timestamp');
     }
 
+    /**
+     * Validation
+     */
     public function validationDefault(Validator $validator)
     {
 //        $validator
@@ -80,11 +68,11 @@ class ProductsTable extends Table
         $query->order(['id' => 'DESC']);
         
         // get data
-        $data = $query->all();
+        $data = $this->_toArray($query->all()->toArray());
         $total = $this->find('all')->count();
         
         return array(
-            'data' => $data->toArray(),
+            'data' => $data,
             'total' => $total
         );
     }

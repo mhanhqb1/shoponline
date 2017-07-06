@@ -61,6 +61,14 @@ $this->UpdateForm->reset()
             'required' => true
         ))
         ->addElement(array(
+            'id' => 'image_path',
+            'type' => 'file',
+            'image' => true,
+            'label' => __('Image'),
+            'class' => 'resize_button_upload',
+            'allowEmpty' => true
+        ))
+        ->addElement(array(
             'id' => 'detail',
             'label' => __('LABEL_DETAIL'),
             'type' => 'editor',
@@ -76,35 +84,24 @@ $this->UpdateForm->reset()
 // Valdate and update
 if ($this->request->is('post')) {
     // Trim data
-    $data = $this->request->data();
-    foreach ($data as $key => $value) {
-        if (is_scalar($value)) {
-            $data[$key] = trim($value);
-        }
-    }
+    $values = $this->request->getData();
 
     // Validation
-    if ($form->validate($data)) {
-        // Call API to Login
-        $data['login_id'] = !empty($data['login']) ? $data['login'] : '';
-        $id = Api::call(Configure::read('API.url_admins_addupdate'), $data);
-        if (!empty($id) && !Api::getError()) {
-            // Update current logged-in
-            $user = $this->Auth->user();
-            if ($id == $user['id']) {
-                $user['login_id'] = $data['login_id'];
-                $user['name'] = $data['name'];
-                $user['admin_type'] = $data['admin_type'];
-                $user['display_name'] = !empty($data['name']) ? $data['name'] : $data['login_id'];
-
-                $this->Auth->setUser($user);
-                $this->AppUI = $user;
-            }
-
-            $this->Flash->success(__('MESSAGE_SAVE_OK'));
-            return $this->redirect("/{$this->controller}/update/{$id}");
+    if ($form->validate($values)) {
+        if (!empty($_FILES['image_path'])) {
+            $values['image_path'] = $this->Image->uploadImage(
+                    $_FILES['image_path'], ''
+            );
+        } elseif (isset($values['image_path']['remove'])) {
+            $values['image_path'] = '';
         } else {
-            return $this->Flash->error(__('MESSAGE_SAVE_NG'));
+            unset($values['image_path']);
         }
+        $entity = $this->$modelName->patchEntity($data, $values);
+        if ($this->$modelName->save($entity)) {
+            $this->Flash->success(__('Cập nhật thành công.'));
+            return $this->redirect(['action' => 'index']);
+        }
+        $this->Flash->error(__('Lỗi.'));
     }
 }

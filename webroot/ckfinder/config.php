@@ -82,16 +82,8 @@ ATTENTION: The trailing slash is required.
 */
 
 //$baseDir = resolveUrl($baseUrl);
-session_name('bmapsadmin');
-session_start();
-$baseDir = '';
-$baseUrl = '';
-if(isset($_SESSION['ckeditor']['basel_dir'])){
-    $baseDir = $_SESSION['ckeditor']['basel_dir'];
-}
-if(isset($_SESSION['ckeditor']['basel_url'])){
-    $baseUrl = $_SESSION['ckeditor']['basel_url'];
-}
+$baseDir = 'C:/xampp/htdocs/trangshop/webroot/files/';
+$baseUrl = 'http://trangshop.localhost/files/';
 /*
  * ### Advanced Settings
  */

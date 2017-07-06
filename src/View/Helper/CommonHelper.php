@@ -64,7 +64,8 @@ class CommonHelper extends AppHelper {
         $config 	= array();
         $config['toolbar'] = array(
             array( 'Source'),
-            array( 'Cut', 'Copy', 'Paste'),	  
+            array( 'Cut', 'Copy', 'Paste', 'PasteText', 'PasteFromWord'),	  
+            array( 'Image', 'Smiley', 'Table', 'Link', 'Unlink'),	  
             array( 'Font','FontSize', 'Bold', 'Italic', 'Underline', 'Strike', '-', 'Subscript', 'Superscript', '-', 'JustifyLeft','JustifyCenter','JustifyRight','JustifyBlock', '-', 'TextColor', 'BGColor')
         );
         $config['height'] = $height;

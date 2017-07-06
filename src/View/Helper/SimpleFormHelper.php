@@ -1,7 +1,7 @@
 <?php
 
 namespace App\View\Helper;
-
+use Cake\Routing\Router;
 /**
  * 
  * Render form html
@@ -27,6 +27,7 @@ class SimpleFormHelper extends AppHelper {
         if (empty($form)) {
             return false;
         }
+        $BASE_URL = Router::fullBaseUrl();
         $html = "<div class=\"form-body\">";
         $form['attributes']['novalidate'] = true;
         $this->Form->templates($form['templates']);
@@ -50,7 +51,7 @@ class SimpleFormHelper extends AppHelper {
             }
             if (!empty($control['image']) && !empty($control['value']) && is_string($control['value'])) {
                 $imageUrl = $this->Common->thumb($control['value'], '');
-                $image = "<div style=\"margin-top:5px;max-width:120px;\"><a data-lightbox=\"lightbox-update-form\" href=\"{$imageUrl}\" class=\"js-thumb\">" . $this->Html->image($imageUrl, array('style' => 'width:120px')) . "</a>";
+                $image = "<div style=\"margin-top:5px;max-width:120px;\"><a data-lightbox=\"lightbox-update-form\" href=\"{$imageUrl}\" class=\"js-thumb\"><img src='{$BASE_URL}/{$imageUrl}' width='120px'/></a>";
                 if (!empty($control['allowEmpty'])) {
                     $image .= "<br/><input name=\"{$control['id']}[remove]\" type=\"checkbox\" value=\"1\"/>&nbsp;" . __('Remove');
                     unset($control['allowEmpty']);

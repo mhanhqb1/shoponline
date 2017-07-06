@@ -62,6 +62,7 @@ class AdminController extends Controller
         $this->loadComponent('SearchForm');
         $this->loadComponent('UpdateForm');
         $this->loadComponent('SimpleTable');
+        $this->loadComponent('Image');
         $this->loadComponent('Auth', array(
             'loginRedirect' => false,
             'logoutRedirect' => false,

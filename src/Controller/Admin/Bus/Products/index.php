@@ -53,13 +53,6 @@ $this->set('limit', $param['limit']);
 
 // Show data
 $this->SimpleTable->addColumn(array(
-            'id' => 'item',
-            'name' => 'items[]',
-            'type' => 'checkbox',
-            'value' => '{id}',
-            'witd' => '20'
-        ))
-        ->addColumn(array(
             'id' => 'id',
             'title' => __('LABEL_ID'),
             'type' => 'link',
