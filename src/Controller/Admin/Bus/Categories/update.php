@@ -4,39 +4,39 @@ use Cake\Core\Configure;
 use Cake\Network\Exception\NotFoundException;
 use Cake\ORM\TableRegistry;
 
-$modelName = 'Products';
+$modelName = 'Categories';
 
 // Load detail
 $data = null;
-$pageTitle = 'Thêm mới sản phẩm';
+$pageTitle = __('LABEL_CATEGORY_ADD');
 if (!empty($id)) {
     $param['id'] = $id;
     $data = $this->$modelName->getDetail($param);
-    $pageTitle = 'Chi tiết sản phẩm';
+    $pageTitle = __('LABEL_CATEGORY_UPDATE');
     if (empty($data)) {
-        AppLog::info("Product unavailable", __METHOD__, $param);
-        throw new NotFoundException("Product unavailable", __METHOD__, $param);
+        AppLog::info("Category unavailable", __METHOD__, $param);
+        throw new NotFoundException("Category unavailable", __METHOD__, $param);
     }
+} else {
+    $id = true;
 }
 
 $this->_pageTitle = $pageTitle;
 
 // Create breadcrumb
-$listPageUrl = h($this->BASE_URL . '/admin/products');
+$listPageUrl = h($this->BASE_URL . '/admin/categories');
 $this->Breadcrumb->setTitle($pageTitle)
         ->add(array(
             'link' => $listPageUrl,
-            'name' => __('LABEL_PRODUCT_LIST'),
+            'name' => __('LABEL_CATEGORY_LIST'),
         ))
         ->add(array(
             'name' => $pageTitle,
         ));
-
-$categories = TableRegistry::get('Categories');
-$categoriesData = $this->Common->arrayKeyValue($categories->getAll(), 'id', 'name');
+$categoriesData = $this->Common->arrayKeyValue($this->$modelName->getAll(array('id' => $id)), 'id', 'name');
 
 // Create Update form 
-$form = new App\Form\UpdateProductForm();
+$form = new App\Form\UpdateCategoryForm();
 $this->UpdateForm->reset()
         ->setModel($form)
         ->setData($data)
@@ -47,35 +47,16 @@ $this->UpdateForm->reset()
             'label' => __('id'),
         ))
         ->addElement(array(
-            'id' => 'title',
+            'id' => 'name',
             'label' => __('LABEL_NAME'),
             'required' => true,
 //        'readonly' => !empty($id),
         ))
         ->addElement(array(
-            'id' => 'category',
-            'label' => __('LABEL_CATEGORY'),
+            'id' => 'root_id',
+            'label' => __('LABEL_PARENT_CATEGORY'),
             'options' => $categoriesData,
-            'required' => true
-        ))
-        ->addElement(array(
-            'id' => 'image_path',
-            'type' => 'file',
-            'image' => true,
-            'label' => __('Image'),
-            'class' => 'resize_button_upload',
-            'allowEmpty' => true
-        ))
-        ->addElement(array(
-            'id' => 'detail',
-            'label' => __('LABEL_DETAIL'),
-            'type' => 'editor',
-            'height' => '300px',
-            'required' => true,
-        ))
-        ->addElement(array(
-            'id' => 'price',
-            'label' => __('LABEL_PRICE'),
+            'empty' => '-'
         ))
         ->addElement(array(
             'type' => 'submit',
@@ -94,20 +75,6 @@ if ($this->request->is('post')) {
     
     // Validation
     if ($form->validate($values)) {
-        if (!empty($_FILES)) {
-            $values['image_path'] = $this->Image->uploadImage(
-                    $_FILES['image_path'], ''
-            );
-            die('asds');
-        } elseif (!empty($values['image_path']['remove'])) {
-            $values['image_path'] = '';
-        } else {
-            $values['image_path'] = $data->image_path;
-        }
-        echo '<pre>';
-        echo $data->image_path;
-        print_r($values);
-        die();
         $entity = $this->$modelName->patchEntity($data, $values);
         if ($this->$modelName->save($entity)) {
             $this->Flash->success(__('Cập nhật thành công.'));

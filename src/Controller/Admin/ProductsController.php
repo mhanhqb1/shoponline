@@ -23,4 +23,16 @@ class ProductsController extends AdminController {
     public function update($id = '') {
         include ('Bus/Products/update.php');
     }
+    
+    /**
+     * Delete product
+     */
+    public function delete($id) {
+//        $this->request->allowMethod(['post', 'delete']);
+
+        $data = $this->Products->get($id);
+        if ($this->Products->delete($data)) {
+            return $this->redirect(['action' => 'index']);
+        }
+    }
 }

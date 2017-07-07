@@ -16,6 +16,15 @@ msgstr ""
 msgid "LABEL_CATEGORY_LIST"
 msgstr "Danh sách danh mục sản phẩm"
 
+msgid "LABEL_CATEGORY_ADD"
+msgstr "Thêm mới danh mục sản phẩm"
+
+msgid "LABEL_CATEGORY_UPDATE"
+msgstr "Cập nhật danh mục sản phẩm"
+
+msgid "LABEL_PARENT_CATEGORY"
+msgstr "Danh mục cha"
+
 msgid "LABEL_PRODUCT_LIST"
 msgstr "Danh sách sản phẩm"
 
@@ -74,4 +83,10 @@ msgid "LABEL_CANCEL"
 msgstr "Hủy bỏ"
 
 msgid "LABEL_DETAIL"
-msgstr "Chi tiểt"
+msgstr "Chi tiết"
+
+msgid "LABEL_IMAGE"
+msgstr "Hình ảnh"
+
+msgid "MESSAGE_CONFIRM_DELETE"
+msgstr "Bạn có thực sự muốn xóa nội dung này?"

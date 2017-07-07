@@ -1,6 +1,6 @@
 <?php
 
-/* 
+/*
  * Home process
  */
 
@@ -9,16 +9,31 @@ namespace App\Controller\Admin;
 use App\Controller\AdminController;
 
 class CategoriesController extends AdminController {
-    
+
+    /**
+     * Category list page
+     */
     public function index() {
         include('Bus/Categories/index.php');
     }
-    
-    public function add() {
-        include('Bus/Categories/add.php');
+
+    /**
+     * Category update page
+     */
+    public function update($id = '') {
+        include ('Bus/Categories/update.php');
     }
-    
-    public function edit($id) {
-        include('Bus/Categories/edit.php');
+
+    /**
+     * Delete category
+     */
+    public function delete($id) {
+//        $this->request->allowMethod(['post', 'delete']);
+
+        $data = $this->Categories->get($id);
+        if ($this->Categories->delete($data)) {
+            return $this->redirect(['action' => 'index']);
+        }
     }
+
 }

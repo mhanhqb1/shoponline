@@ -5,7 +5,7 @@ namespace App\Model\Table;
 use Cake\ORM\Table;
 use Cake\Validation\Validator;
 
-class CategoriesTable extends Table
+class CategoriesTable extends AbstractTable
 {
     public $_displayField = array();
     
@@ -27,7 +27,22 @@ class CategoriesTable extends Table
     
     // Get All
     public function getAll($param = array()) {
-        return $this->find('all');
+        $query = $this->find()->select([
+                'id', 
+                'name',
+                'root_id'
+            ])
+        ;
+        
+        if (!empty($param['id'])) {
+            $id = $param['id'];
+            $query->where(['root_id =' => ''])
+                ->orWhere(['root_id is' => NULL])
+                ->andWhere(['id !=' => $id]);
+        }
+        
+        $data = $this->_toArray($query->all()->toArray());
+        return $data;
     }
     
     // Get list
@@ -66,12 +81,19 @@ class CategoriesTable extends Table
         $query->order(['id' => 'DESC']);
         
         // get data
-        $data = $query->all();
+        $data = $this->_toArray($query->all()->toArray());
         $total = $this->find('all')->count();
         
         return array(
-            'data' => $data->toArray(),
+            'data' => $data,
             'total' => $total
         );
+    }
+    
+    /**
+     * Get detail
+     */
+    public function getDetail($param) {
+        return $this->get($param['id']);
     }
 }

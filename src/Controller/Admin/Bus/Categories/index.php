@@ -49,7 +49,7 @@ $this->SimpleTable->addColumn(array(
         'title' => __('LABEL_ID'),
         'type' => 'link',
         'value' => '{id}',
-        'href'  => $this->BASE_URL . '/' . $this->controller . '/edit/{id}',
+        'href'  => $this->BASE_URL . '/' . $this->controller . '/update/{id}',
         'width' => 80,
     ))
     ->addColumn(array(
@@ -69,16 +69,18 @@ $this->SimpleTable->addColumn(array(
         'title' => __('LABEL_EDIT'),
         'type' => 'link',
         'value' => '{id}',
-        'href'  => $this->BASE_URL . '/' . $this->controller . '/edit/{id}',
+        'href'  => $this->BASE_URL . '/admin/' . $this->controller . '/update/{id}',
         'width' => 80,
+        'button' => 'edit'
     ))
     ->addColumn(array(
         'id' => 'delete',
         'title' => __('LABEL_DELETE'),
         'type' => 'link',
-        'value' => '{id}',
-        'href'  => $this->BASE_URL . '/' . $this->controller . '/edit/{id}',
+        'href'  => $this->BASE_URL . '/admin/' . $this->controller . '/delete/{id}',
         'width' => 80,
+        'onclick' => "return confirm('" . __('MESSAGE_CONFIRM_DELETE') . "')",
+        'button' => 'delete'
     ))
     ->setDataset($data)
     ->addButton(array(

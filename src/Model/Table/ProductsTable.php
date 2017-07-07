@@ -43,7 +43,8 @@ class ProductsTable extends AbstractTable
                 'id', 
                 'title',
                 'price',
-                'category'
+                'category',
+                'image_path'
             ])
         ;
         

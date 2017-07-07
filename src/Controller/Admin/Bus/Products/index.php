@@ -61,6 +61,13 @@ $this->SimpleTable->addColumn(array(
             'width' => 80,
         ))
         ->addColumn(array(
+            'id' => 'image_path',
+            'type' => 'image',
+            'title' => __('LABEL_IMAGE'),
+            'src' => '{image_path}',
+            'width' => 120,
+        ))
+        ->addColumn(array(
             'id' => 'title',
             'title' => __('LABEL_NAME'),
             'empty' => ''
@@ -84,14 +91,15 @@ $this->SimpleTable->addColumn(array(
             'value' => '{id}',
             'href' => $this->BASE_URL . '/admin/' . $this->controller . '/update/{id}',
             'width' => 80,
+            'button' => 'edit'
         ))
         ->addColumn(array(
-            'id' => 'delete',
             'title' => __('LABEL_DELETE'),
             'type' => 'link',
-            'value' => '{id}',
-            'href' => $this->BASE_URL . '/' . $this->controller . '/edit/{id}',
+            'href' => $this->BASE_URL . '/admin/' . $this->controller . '/delete/{id}',
+            'onclick' => "return confirm('" . __('MESSAGE_CONFIRM_DELETE') . "')",
             'width' => 80,
+            'button' => 'delete'
         ))
         ->setDataset($data)
         ->addButton(array(

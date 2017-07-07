@@ -60,5 +60,6 @@
         <script type="text/javascript" src="<?php echo $BASE_URL ?>/AdminLTE/plugins/datepicker/bootstrap-datepicker.js"></script>
         <script type="text/javascript" src="<?php echo $BASE_URL ?>/AdminLTE/plugins/datepicker/locales/bootstrap-datepicker.ja.js"></script>
         <script type="text/javascript" src="<?php echo $BASE_URL ?>/AdminLTE/dist/js/app.min.js"></script>
+        <script type="text/javascript" src="<?php echo $BASE_URL ?>/js/admin_common.js"></script>
     </body>
 </html>

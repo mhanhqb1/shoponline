@@ -282,7 +282,11 @@ class SimpleTableHelper extends AppHelper {
                 if ($item['type'] == 'link') {
                     if ($data[$item['id']] != '') {
                         if (isset($item['button'])) {
-                            $value = "<a {$options}><span class=\"label label-primary\">{$data[$item['id']]}</span></a>";
+                            if ($item['button'] == 'delete') {
+                                $value = "<a {$options}><span class=\"label label-danger\">{$data[$item['id']]}</span></a>";
+                            } else {
+                                $value = "<a {$options}><span class=\"label label-primary\">{$data[$item['id']]}</span></a>";
+                            }
                         } else {
                             $value = "<a {$options}>{$data[$item['id']]}</a>";
                         }
