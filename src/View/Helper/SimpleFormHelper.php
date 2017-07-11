@@ -50,8 +50,8 @@ class SimpleFormHelper extends AppHelper {
                 unset($control['required']);
             }
             if (!empty($control['image']) && !empty($control['value']) && is_string($control['value'])) {
-                $imageUrl = $this->Common->thumb($control['value'], '');
-                $image = "<div style=\"margin-top:5px;max-width:120px;\"><a data-lightbox=\"lightbox-update-form\" href=\"{$imageUrl}\" class=\"js-thumb\"><img src='{$BASE_URL}/{$imageUrl}' width='120px'/></a>";
+                $imageUrl = $this->Common->thumb($BASE_URL.'/'.$control['value'], '');
+                $image = "<div style=\"margin-top:5px;max-width:120px;\"><a target=\"_blank\" data-lightbox=\"lightbox-update-form\" href=\"{$imageUrl}\" class=\"js-thumb\"><img src='{$imageUrl}' width='120px'/></a>";
                 if (!empty($control['allowEmpty'])) {
                     $image .= "<br/><input name=\"{$control['id']}[remove]\" type=\"checkbox\" value=\"1\"/>&nbsp;" . __('Remove');
                     unset($control['allowEmpty']);

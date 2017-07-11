@@ -73,9 +73,8 @@ $this->SimpleTable->addColumn(array(
             'empty' => ''
         ))
         ->addColumn(array(
-            'id' => 'category',
+            'id' => 'category_name',
             'title' => __('LABEL_CATEGORY'),
-            'rules' => $categoriesData,
             'empty' => ''
         ))
         ->addColumn(array(

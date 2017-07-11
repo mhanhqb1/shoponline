@@ -60,7 +60,7 @@ Router::scope('/', function (RouteBuilder $routes) {
 
         $routes->connect(
             '/',
-            ['controller' => 'Products', 'action' => 'index']
+            ['controller' => 'Dashboard', 'action' => 'index']
         );
         $routes->connect(
             '/:controller',

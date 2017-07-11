@@ -3,6 +3,7 @@
 namespace App\View\Helper;
 
 use Cake\Validation\Validation;
+use Cake\Routing\Router;
 
 /**
  * Render table html
@@ -26,6 +27,7 @@ class SimpleTableHelper extends AppHelper {
      * @return string Html
      */
     function input($item, $option = 0) {
+        $BASE_URL = Router::fullBaseUrl();
         $attr = array();
         if (!isset($item['name'])) {
             $item['name'] = $item['id'];
@@ -57,7 +59,7 @@ class SimpleTableHelper extends AppHelper {
         } elseif ($item['type'] == 'image') {
             $html = "<div class=\"td_file\"><input {$attr} /></div>";
             if (!empty($item['value'])) {
-                $html .= "<div class=\"td_img\"><img style=\"margin-top:5px;width:100px;\" src=\"{$this->Common->thumb($item['value'], '100x100')}\" /></div>";
+                $html .= "<div class=\"td_img\"><img style=\"margin-top:5px;width:100px;\" src=\"{$this->Common->thumb($BASE_URL.'/'.$item['value'], '100x100')}\" /></div>";
             }
             return $html;
         } elseif ($item['type'] == 'select') {
@@ -81,6 +83,7 @@ class SimpleTableHelper extends AppHelper {
      * @return string Html
      */
     function render($table) {
+        $BASE_URL = Router::fullBaseUrl();
         //$controller = $this->request->params['controller'];
         $modelName = $table['modelName'];
         $columns = $table['columns'];
@@ -220,8 +223,8 @@ class SimpleTableHelper extends AppHelper {
                         ))) {
                         $attrVal = str_replace($search, $replace, $attrVal);
                         if (is_scalar($attrVal)) {
-                            if ($attrKey == 'src') {
-                                $attrVal = $this->Common->thumb($attrVal, '60x60');
+                            if ($attrKey == 'src' && !empty($attrVal)) {
+                                $attrVal = $this->Common->thumb($BASE_URL.'/'.$attrVal, '60x60');
                             }
                             if (!empty($attrVal)) {
                                 $options[] = "{$attrKey}=\"{$attrVal}\"";

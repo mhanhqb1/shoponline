@@ -62,9 +62,8 @@ $this->UpdateForm->reset()
             'id' => 'image_path',
             'type' => 'file',
             'image' => true,
-            'label' => __('Image'),
-            'class' => 'resize_button_upload',
-            'allowEmpty' => true
+            'label' => __('LABEL_IMAGE'),
+//            'allowEmpty' => true
         ))
         ->addElement(array(
             'id' => 'detail',
@@ -94,20 +93,15 @@ if ($this->request->is('post')) {
     
     // Validation
     if ($form->validate($values)) {
-        if (!empty($_FILES)) {
+        if (!empty($_FILES['image_path']['name'])) {
             $values['image_path'] = $this->Image->uploadImage(
-                    $_FILES['image_path'], ''
+                $_FILES['image_path'], ''
             );
-            die('asds');
         } elseif (!empty($values['image_path']['remove'])) {
             $values['image_path'] = '';
         } else {
             $values['image_path'] = $data->image_path;
         }
-        echo '<pre>';
-        echo $data->image_path;
-        print_r($values);
-        die();
         $entity = $this->$modelName->patchEntity($data, $values);
         if ($this->$modelName->save($entity)) {
             $this->Flash->success(__('Cập nhật thành công.'));

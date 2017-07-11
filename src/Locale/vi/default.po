@@ -55,6 +55,9 @@ msgstr "Delete"
 msgid "LABEL_ADD_NEW"
 msgstr "Thêm mới"
 
+msgid "LABEL_VIEW_MORE"
+msgstr "Xem tất cả"
+
 msgid "LABEL_LOGOUT"
 msgstr "Logout"
 
@@ -90,3 +93,6 @@ msgstr "Hình ảnh"
 
 msgid "MESSAGE_CONFIRM_DELETE"
 msgstr "Bạn có thực sự muốn xóa nội dung này?"
+
+msgid "LABEL_NEW_PRODUCTS"
+msgstr "Sản phẩm mới"
