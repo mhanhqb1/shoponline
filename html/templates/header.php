@@ -128,6 +128,8 @@
             </div>
             <p id='sb-none'>Chưa có sản phẩm nào trong giỏ hàng.</p>
         </div>
+        
+        <!-- END TOP -->
 
         <div id="framecontent">
             <div class="innertube" id="PC-TOP">

@@ -1,28 +1,29 @@
+
 <div id="TOP">
     <div class="top-i">
         <div id="top-img">
-            <a href="/"><img src="<?php echo $BASE_URL ?>/images/logomobile.png"/></a>
+            <a href="/"><img src="<?php echo $BASE_URL;?>/images/logomobile.png"/></a>
         </div>
         <div id="m-menu">
             <ul>
                 <li id="m-open" class="sb-open-left">
                     <a href="javascript:void(0)">
                         <p>MENU</p>
-                        <img src="<?php echo $BASE_URL ?>/images/icon_menu.png" />
+                        <img src="<?php echo $BASE_URL;?>/images/icon_menu.png" />
                     </a>
                 </li>
                 <li>
                     <a href="javascript:void(0)" class="m-search">
-                        <img src="<?php echo $BASE_URL ?>/images/icon_search.png" />
+                        <img src="<?php echo $BASE_URL;?>/images/icon_search.png" />
                     </a>
                 </li>
                 <li class="sb-open-right">
                     <a href="javascript:void(0)" class="m-cart">
-                        <img src="<?php echo $BASE_URL ?>/images/icon_bag.png" />
+                        <img src="<?php echo $BASE_URL;?>/images/icon_bag.png" />
                         <div id="m-cart-sl"><span>0</span></div>
                     </a>
                 </li>
-            </ul>
+            </ul> 
         </div>
         <div class="clear" id="pre-clear"></div>
         <div id="m-search-i">

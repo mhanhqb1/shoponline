@@ -17,7 +17,7 @@
         <link rel="stylesheet" href="<?php echo $BASE_URL ?>/AdminLTE/dist/css/skins/_all-skins.min.css"/>
         <link rel="stylesheet" href="<?php echo $BASE_URL ?>/AdminLTE/plugins/pace/pace.min.css"/>
         <link rel="stylesheet" href="<?php echo $BASE_URL ?>/AdminLTE/plugins/datepicker/datepicker3.css"/>
-        <link rel="stylesheet" href="<?php echo $BASE_URL ?>/css/style.css?<?php echo VERSION_DATE ?>"/>
+        <link rel="stylesheet" href="<?php echo $BASE_URL ?>/css/admin_style.css?<?php echo VERSION_DATE ?>"/>
         
         <!--[if lt IE 9]>
         <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
