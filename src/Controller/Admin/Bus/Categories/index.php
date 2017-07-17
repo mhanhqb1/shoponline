@@ -58,11 +58,10 @@ $this->SimpleTable->addColumn(array(
         'emtpy' => ''
     ))
     ->addColumn(array(
-        'id' => 'root_id',
-        'title' => __('LABEL_PARENT_CATEGORY'),
-        'rules' => $categoriesData,
+        'id' => 'priority',
+        'title' => __('LABEL_PRIORITY'),
         'empty' => '',
-        'width' => 300
+        'width' => 150
     ))   
     ->addColumn(array(
         'id' => 'edit',

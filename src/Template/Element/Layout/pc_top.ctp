@@ -7,29 +7,20 @@
         <div style="margin-left:50px;">
             <div id='cssmenu'>
                 <ul>
-                    <li class='has-sub'><a href='#' style="font-weight:bold;"><span>TRANG CHỦ</span></a>
-                        <ul>
-                            <li><a href='#'><span>Giới thiệu</span></a></li>
-                            <li><a href='#'><span>Triết lý sản phẩm</span></a></li>
-                        </ul>   
+                    <li>
+                        <a href='<?php echo $BASE_URL;?>' style="font-weight:bold;"><span><?php echo __('LABEL_HOME');?></span></a>
                     </li>
-                    <li class='has-sub'><a href='#' style="font-weight:bold;"><span>TIN TỨC</span></a>
-                        <ul>
-                            <li><a href='/index.php?ac=news'><span>Tin Elise</span></a></li>
-                            <li><a href='#'><span>Tin tổng hợp</span></a></li>   
-                        </ul>   
+                    <li>
+                        <a href='<?php echo $BASE_URL;?>/gioithieu' style="font-weight:bold;"><span><?php echo __('LABEL_INTRODUCTION');?></span></a>
                     </li>
-                    <li class='has-sub'><a href='#' style="font-weight:bold;"><span>SHOP ONLINE</span></a>
+                    <?php if (!empty($categories)): ?>
+                    <li class='has-sub'><a href='#' style="font-weight:bold;"><span><?php echo __('LABEL_ELEHT_PRODUCTS');?></span></a>
                         <ul>
-
-                            <li class='has-sub'><a href='#' style="font-weight:bold;"><span>Elise Woman</span></a>
-
-                                <ul>
-                                    <li><a href='/index.php?ac=sanpham&maloai=31' style="font-weight:bold;"> <span>BỘ SƯU TẬP MỚI</span></a></li>
-                                    <li class='last'><a href='/index.php?ac=sanpham&maloai=44' style="font-weight:bold;" ><span>Phụ kiện</span></a></li>
-                                </ul>
+                            <?php foreach ($categories as $c): ?>
+                            <li>
+                                <a href='<?php echo $BASE_URL;?>/categories/<?php echo $c['id'];?>' style="font-weight:bold;"><span><?php echo $c['name']; ?></span></a>
                             </li>
-                            <li class='has-sub'><a href='#' style="font-weight:bold;"><span>Elise Kids</span></a>
+<!--                            <li class='has-sub'><a href='#' style="font-weight:bold;"><span>Elise Kids</span></a>
                                 <ul>
                                     <li class='has-sub'><a href='#' style="font-weight:bold;"><span>Elise Kids Girl</span></a>
                                         <ul>
@@ -44,29 +35,15 @@
                                         </ul>
                                     </li>
                                 </ul>
-                            </li>
-                            <li class='has-sub'><a href='#' style="font-weight:bold;"><span>Elise Basic</span></a>
-                                <ul>
-                                    <li><a href='#'><span>Chân váy</span></a></li>
-                                    <li class='last'><a href='#'><span>Phụ kiện</span></a></li>
-                                </ul>
-                            </li>	
-
+                            </li>-->
+                            <?php endforeach; ?>
                         </ul>
                     </li>
-                    <li class='has-sub'><a href='#' style="font-weight:bold;"><span>BỘ SƯU TẬP</span></a>
-                        <ul>
-                            <li><a href='/index.php?ac=lookbook&catid=17'><span>Woman</span></a></li>
-                            <li><a href='/index.php?ac=lookbook&catid=18'><span>Kids</span></a></li>
-                            <li class='last'><a href='/index.php?ac=lookbook&catid=19'><span>Basic</span></a></li>
-                        </ul>
-
-
+                    <li>
+                        <a href='<?php echo $BASE_URL;?>/news' style="font-weight:bold;"><span><?php echo __('LABEL_NEWS');?></span></a>
                     </li>
-                    <li><a href='/index.php?ac=sharevideo' style="font-weight:bold;"><span>VIDEOS</span></a></li>
-                    <li><a href='/index.php?ac=about' style="font-weight:bold;" ><span>HỆ THỐNG CỬA HÀNG</span></a></li>
-                    <li><a href='/index.php?ac=cs' style="font-weight:bold;"><span>DỊCH VỤ KHÁCH HÀNG</span></a></li>
-                    <li class='last'><a href='/index.php?ac=contact' style="font-weight:bold;"><span>LIÊN HỆ</span></a></li>
+                    <?php endif; ?>
+                    <li class='last'><a href='/index.php?ac=contact' style="font-weight:bold;"><span><?php echo __('LABEL_CONTACT');?></span></a></li>
                 </ul>
             </div>
         </div>

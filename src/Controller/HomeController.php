@@ -6,6 +6,9 @@
 
 namespace App\Controller;
 
+use Cake\ORM\TableRegistry;
+use Cake\Core\Configure;
+
 class HomeController extends AppController {
     
     public function index() {

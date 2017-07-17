@@ -18,6 +18,7 @@ use Cake\Controller\Controller;
 use Cake\Event\Event;
 use Cake\Core\Configure;
 use Cake\Routing\Router;
+use Cake\ORM\TableRegistry;
 
 /**
  * Application Controller
@@ -96,6 +97,11 @@ class AppController extends Controller
         $this->set('action', $this->action);
         $this->set('current_url', $this->current_url);
         $this->set('BASE_URL', $this->BASE_URL);
+        
+        // Get categories data
+        $categories = TableRegistry::get('Categories');
+        $categoriesData = $categories->getAll();
+        $this->set('categories', $categoriesData);
         
         // Set default layout
         $this->setLayout();

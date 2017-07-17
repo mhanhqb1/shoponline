@@ -53,10 +53,8 @@ $this->UpdateForm->reset()
 //        'readonly' => !empty($id),
         ))
         ->addElement(array(
-            'id' => 'root_id',
-            'label' => __('LABEL_PARENT_CATEGORY'),
-            'options' => $categoriesData,
-            'empty' => '-'
+            'id' => 'priority',
+            'label' => __('LABEL_PRIORITY'),
         ))
         ->addElement(array(
             'type' => 'submit',

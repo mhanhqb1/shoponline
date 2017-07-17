@@ -30,16 +30,9 @@ class CategoriesTable extends AbstractTable
         $query = $this->find()->select([
                 'id', 
                 'name',
-                'root_id'
+                'priority'
             ])
         ;
-        
-        if (!empty($param['id'])) {
-            $id = $param['id'];
-            $query->where(['root_id =' => ''])
-                ->orWhere(['root_id is' => NULL])
-                ->andWhere(['id !=' => $id]);
-        }
         
         $data = $this->_toArray($query->all()->toArray());
         return $data;
@@ -56,7 +49,7 @@ class CategoriesTable extends AbstractTable
             ->select([
                 'id', 
                 'name',
-                'root_id'
+                'priority'
             ])
         ;
         

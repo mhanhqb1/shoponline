@@ -109,3 +109,18 @@ msgstr "Hình ảnh trang chủ"
 msgid "LABEL_PRIORITY"
 msgstr "Vị trí hiển thị"
 
+msgid "LABEL_HOME"
+msgstr "Trang chủ"
+
+msgid "LABEL_INTRODUCTION"
+msgstr "Giới thiệu"
+
+msgid "LABEL_NEWS"
+msgstr "Tin tức"
+
+msgid "LABEL_ELEHT_PRODUCTS"
+msgstr "Sản phẩm ELEHT"
+
+msgid "LABEL_CONTACT"
+msgstr "Liên hệ"
+
