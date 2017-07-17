@@ -232,3 +232,4 @@ Configure::write('Config.PageLimit', array(
     100 => '100'
 ));
 Configure::write('Config.PaginationLimit', 10);
+Configure::write('Config.upload_maxsize', '5M');

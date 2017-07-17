@@ -25,6 +25,17 @@
                     <li class="<?php if ($controller == 'categories') echo ' active ' ?>"><a href="<?php echo $BASE_URL ?>/admin/categories"><i class="fa fa-tags"></i> <?php echo __('LABEL_CATEGORY_LIST') ?></a></li>
                 </ul>
             </li>
+            <li class="treeview <?php if (in_array($controller, array('sliders'))) echo ' active ' ?>">
+                <a href="#">
+                    <i class="fa fa-list"></i> <span><?php echo __('LABEL_IMAGE_MANAGEMENT') ?></span>
+                    <span class="pull-right-container">
+                        <i class="fa fa-angle-left pull-right"></i>
+                    </span>
+                </a>
+                <ul class="treeview-menu">
+                    <li class="<?php if ($controller == 'sliders') echo ' active ' ?>"><a href="<?php echo $BASE_URL ?>/admin/sliders"><i class="fa fa-product-hunt"></i> <?php echo __('LABEL_SLIDERS_LIST') ?></a></li>
+                </ul>
+            </li>
             <li class="treeview <?php if (in_array($controller, array('settings'))) echo ' active ' ?>">
                 <a href="#">
                     <i class="fa fa-database"></i> <span><?php echo __('LABEL_MASTER') ?></span>

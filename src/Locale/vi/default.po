@@ -96,3 +96,16 @@ msgstr "Bạn có thực sự muốn xóa nội dung này?"
 
 msgid "LABEL_NEW_PRODUCTS"
 msgstr "Sản phẩm mới"
+
+msgid "LABEL_IMAGE_MANAGEMENT"
+msgstr "Quản lý hình ảnh"
+
+msgid "LABEL_LINK"
+msgstr "Link"
+
+msgid "LABEL_SLIDERS_LIST"
+msgstr "Hình ảnh trang chủ"
+
+msgid "LABEL_PRIORITY"
+msgstr "Vị trí hiển thị"
+

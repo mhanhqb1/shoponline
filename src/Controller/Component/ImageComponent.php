@@ -67,7 +67,7 @@ class ImageComponent extends AppComponent {
                 return false;
             } else {
                 $exploded = explode('.', $file['name']);
-                $extension = end($exploded);
+                $extension = strtolower(end($exploded));
                 if (!in_array($extension, $this->allowed_extensions)) {
                     $this->errorMsg[] = __('Image extension is invalid');
                     return false;
